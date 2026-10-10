@@ -139,6 +139,8 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,64px);align-items:center;}
 .hero h1{font-size:clamp(4.8rem,14vw,10rem);margin-bottom:5rem;letter-spacing:-.01em;}
 .hero h1 em{color:var(--teal-bright);font-style:normal;}
+#home h1{font-size:clamp(2.6rem,6vw,4.5rem);line-height:1.05;}
+#home .label{font-size:clamp(15px,1.6vw,18px);}
 
 /* HEADING REVEAL */
 .reveal-lines{overflow:visible;}
@@ -186,8 +188,6 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 .logo-track{display:flex;gap:clamp(32px,5vw,64px);width:max-content;animation:scroll-logos 28s linear infinite;}
 .logo-track span{font-family:'General Sans','Clash Display',sans-serif;font-weight:700;font-size:clamp(1.1rem,2vw,1.4rem);color:var(--faint);white-space:nowrap;}
 @keyframes scroll-logos{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-.logo-strip{padding:44px 0 12px;}
-.logo-track span{display:inline-block;will-change:transform;}
 
 /* ============ SERVICES ============ */
 .svc-list{display:flex;flex-direction:column;gap:10px;}
@@ -637,27 +637,6 @@ const menuClose = document.getElementById('menuClose');
 hamburger.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
 menuClose.addEventListener('click',()=>mobileMenu.classList.remove('open'));
 document.querySelectorAll('.menu-link').forEach(l=>l.addEventListener('click',()=>mobileMenu.classList.remove('open')));
-</script>
-<script>
-/* Scrolling words rise in a bell curve towards the centre of the strip */
-(function(){
-  var strip=document.querySelector('.logo-strip');
-  if(!strip||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  var words=strip.querySelectorAll('.logo-track span');
-  function frame(){
-    var r=strip.getBoundingClientRect();
-    if(r.bottom>0&&r.top<innerHeight){
-      var mid=r.left+r.width/2, spread=r.width*0.22;
-      for(var i=0;i<words.length;i++){
-        var w=words[i].getBoundingClientRect();
-        var dx=(w.left+w.width/2-mid)/spread;
-        words[i].style.transform='translateY('+(-34*Math.exp(-dx*dx)).toFixed(1)+'px)';
-      }
-    }
-    requestAnimationFrame(frame);
-  }
-  requestAnimationFrame(frame);
-})();
 </script>
 </body>
 </html>
