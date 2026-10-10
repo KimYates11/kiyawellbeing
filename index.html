@@ -186,6 +186,10 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 .logo-track{display:flex;gap:clamp(32px,5vw,64px);width:max-content;animation:scroll-logos 28s linear infinite;}
 .logo-track span{font-family:'General Sans','Clash Display',sans-serif;font-weight:700;font-size:clamp(1.1rem,2vw,1.4rem);color:var(--faint);white-space:nowrap;}
 @keyframes scroll-logos{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.logo-strip{padding:16px 0;}
+.logo-track span{display:inline-block;animation:wave 4.5s ease-in-out infinite;}
+.logo-track span:nth-child(9n+1){animation-delay:-0.0s;}.logo-track span:nth-child(9n+2){animation-delay:-0.5s;}.logo-track span:nth-child(9n+3){animation-delay:-1.0s;}.logo-track span:nth-child(9n+4){animation-delay:-1.5s;}.logo-track span:nth-child(9n+5){animation-delay:-2.0s;}.logo-track span:nth-child(9n+6){animation-delay:-2.5s;}.logo-track span:nth-child(9n+7){animation-delay:-3.0s;}.logo-track span:nth-child(9n+8){animation-delay:-3.5s;}.logo-track span:nth-child(9n+9){animation-delay:-4.0s;}
+@keyframes wave{0%,100%{transform:translateY(-8px);}50%{transform:translateY(8px);}}
 
 /* ============ SERVICES ============ */
 .svc-list{display:flex;flex-direction:column;gap:10px;}
@@ -320,6 +324,7 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 
 /* ============ MICRO-ANIMATIONS ============ */
 @media(prefers-reduced-motion:reduce){
+  .logo-track span{animation:none;}
   *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
   .photo-card{animation:none !important;}
 }
