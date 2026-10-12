@@ -157,6 +157,12 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 
 /* ============ TESTIMONIALS ============ */
 .corp-testi-grid{display:flex;gap:16px;align-items:stretch;}
+.client-logos{margin-top:clamp(40px,6vw,64px);text-align:center;}
+.client-logos-label{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:1.25rem;}
+.client-logos-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.client-logo{background:#fff;border:1px solid var(--line);border-radius:16px;height:110px;display:flex;align-items:center;justify-content:center;padding:14px 20px;}
+.client-logo img{max-width:100%;max-height:72px;object-fit:contain;mix-blend-mode:multiply;}
+@media(max-width:700px){.client-logos-row{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:800px){.corp-testi-grid{flex-direction:column;}}
 .corp-testi-card{
   flex:1;background:var(--white);border:1px solid rgba(44,33,24,.18);border-radius:20px;padding:1.5rem 1.5rem;
@@ -484,6 +490,16 @@ html,body{overflow-x:clip;}
         <div class="testi-company">Remedy Drinks</div>
       </div>
 
+    </div>
+
+    <div class="client-logos" data-aos="fade-up">
+      <p class="client-logos-label">Trusted by</p>
+      <div class="client-logos-row">
+        <div class="client-logo"><img src="logos/simplot.png" alt="Simplot Australia" loading="lazy"></div>
+        <div class="client-logo"><img src="logos/xperience.png" alt="Xperience — people + change solutions" loading="lazy"></div>
+        <div class="client-logo"><img src="logos/ozdare.png" alt="Ozdare" loading="lazy"></div>
+        <div class="client-logo"><img src="logos/remedy.png" alt="Remedy Drinks" loading="lazy"></div>
+      </div>
     </div>
   </div>
 </section>
