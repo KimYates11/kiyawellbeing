@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Is Your Wellbeing Program a Tick-Box? 5 Signs — Kiya Wellbeing</title>
+<meta name="description" content="Planning your wellbeing calendar? 5 signs your workplace wellbeing program is a tick-box exercise, and what to do instead. A practical checklist for HR and People &amp; Culture teams from Kim Yates.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=fraunces@400,600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+:root{
+  --teal-bright:#C4837A;
+  --teal-deep:#116E6B;
+  --accent:var(--teal-deep);
+  --ink:#4A3F36;
+  --ink-soft:#4A3F36;
+  --warm:#F4F0EB;
+  --white:#ffffff;
+  --muted:#7A6E65;
+  --faint:#A69E95;
+  --line:#E8DDD0;
+  --on-dark:#F0E8DE;
+  --on-dark-muted:#C4B5A8;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'General Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--white);color:var(--ink-soft);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.15;color:var(--teal-deep);}
+.container{max-width:1100px;margin:0 auto;padding:0 clamp(20px,5vw,40px);}
+.label{display:inline-block;font-family:'General Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:1.1rem;}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:'General Sans',sans-serif;font-weight:600;font-size:16px;padding:15px 30px;border-radius:100px;text-decoration:none;cursor:pointer;border:none;transition:transform .2s ease,box-shadow .25s ease,background .2s ease;}
+.btn-primary{background:#116E6B;color:#fff;box-shadow:0 3px 10px rgba(44,33,24,.25);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(44,33,24,.3);}
+.btn-sm{padding:11px 22px;font-size:15px;}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:var(--white);transition:box-shadow .25s ease;border-bottom:1px solid transparent;}
+.nav.scrolled{box-shadow:0 4px 24px rgba(44,33,24,.1);border-bottom-color:var(--line);}
+.nav-inner{max-width:1100px;margin:0 auto;padding:16px clamp(20px,5vw,40px);display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:19px;color:var(--ink-soft);text-decoration:none;letter-spacing:.01em;}
+.nav-logo span{color:var(--teal-deep);}
+.nav-links{display:flex;align-items:center;gap:20px;}
+.nav-links a{font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none;transition:color .2s;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.active{color:var(--teal-deep);}
+.nav-links .btn{color:#fff;}
+.nav-links .btn:hover{color:#fff;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+.hamburger span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.3s;}
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--warm);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:28px;padding:24px;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-size:22px;font-weight:700;font-family:'Fraunces',Georgia,serif;color:var(--ink-soft);text-decoration:none;}
+.mobile-menu a:hover{color:var(--teal-deep);}
+
+/* POST HERO */
+.post-hero{background:var(--warm);padding:clamp(56px,8vw,96px) 0 clamp(40px,6vw,64px);}
+.post-meta{display:flex;align-items:center;gap:16px;margin-bottom:1.5rem;flex-wrap:wrap;}
+.post-tag{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-deep);background:rgba(17,110,107,.1);border:1px solid rgba(17,110,107,.2);border-radius:100px;padding:5px 14px;}
+.post-date{font-size:14px;color:var(--muted);}
+.post-hero h1{font-size:clamp(2rem,6vw,3.8rem);max-width:20ch;margin-bottom:1.25rem;}
+.post-hero-sub{font-size:clamp(1rem,2vw,1.2rem);color:var(--muted);max-width:56ch;line-height:1.7;}
+.post-author{display:flex;align-items:center;gap:12px;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--line);}
+.post-author-avatar{width:44px;height:44px;border-radius:50%;background:rgba(17,110,107,.15);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:16px;color:var(--teal-deep);flex-shrink:0;}
+.post-author-name{font-weight:600;font-size:15px;color:var(--ink-soft);}
+.post-author-role{font-size:13px;color:var(--muted);}
+
+/* STAT CALLOUT */
+.stat-callout{background:rgba(17,110,107,.07);border:1px solid rgba(17,110,107,.2);border-radius:20px;padding:2rem 2.25rem;margin:2.5rem 0;display:flex;gap:1.5rem;align-items:flex-start;}
+.stat-callout-num{font-family:'Fraunces',Georgia,serif;font-size:clamp(2.8rem,7vw,4rem);font-weight:700;color:var(--teal-deep);line-height:1;flex-shrink:0;}
+.stat-callout-text{font-size:16px;color:var(--ink-soft);line-height:1.6;padding-top:.4rem;}
+.stat-callout-text strong{display:block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:.35rem;}
+
+/* POST BODY */
+.post-body{max-width:680px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,40px);}
+.post-body p{font-size:17px;line-height:1.85;color:var(--ink-soft);margin-bottom:1.5rem;}
+.post-body p:last-child{margin-bottom:0;}
+.post-body h2{font-size:clamp(1.3rem,3vw,1.7rem);color:var(--teal-deep);margin:2.5rem 0 1rem;}
+.post-figure{margin:2.5rem 0;}
+.post-figure img{width:100%;height:auto;display:block;border-radius:16px;}
+.post-pullquote{border-left:3px solid var(--teal-deep);padding:1rem 0 1rem 1.75rem;margin:2.5rem 0;}
+.post-pullquote p{font-family:'Fraunces',Georgia,serif;font-size:clamp(1.2rem,3vw,1.6rem);line-height:1.3;color:var(--ink-soft);font-style:normal;margin:0;}
+.post-pullquote cite{display:block;font-size:13px;font-style:normal;color:var(--muted);margin-top:.6rem;letter-spacing:.04em;}
+.post-list{margin:0 0 1.75rem 1.25rem;padding:0;}
+.post-list li{font-size:17px;line-height:1.75;color:var(--ink-soft);margin-bottom:.6rem;}
+.post-figure{margin:2.5rem 0;}
+.post-figure img{width:100%;height:auto;display:block;border-radius:16px;}
+.post-body a{color:var(--teal-deep);text-decoration:underline;text-underline-offset:3px;}
+.post-source{font-size:13px;color:var(--faint);margin-top:-.75rem;margin-bottom:1.5rem;font-style:italic;}
+
+/* CTA BAND */
+.post-cta{background:var(--warm);border-top:1px solid var(--line);padding:clamp(48px,6vw,72px) 0;}
+.post-cta-inner{max-width:680px;margin:0 auto;padding:0 clamp(20px,5vw,40px);}
+.post-cta h3{font-size:clamp(1.4rem,3.5vw,2rem);margin-bottom:.75rem;}
+.post-cta p{font-size:16px;color:var(--muted);margin-bottom:1.75rem;line-height:1.7;}
+
+/* FOOTER */
+footer{background:#116E6B;color:#fff;padding:clamp(48px,7vw,80px) 0 clamp(28px,4vw,40px);}
+.footer-inner{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start;margin-bottom:clamp(32px,5vw,56px);}
+.footer-logo{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:22px;color:var(--on-dark);text-decoration:none;}
+.footer-logo span{color:var(--teal-bright);}
+.footer-nav{display:flex;flex-wrap:wrap;gap:16px 28px;justify-content:flex-end;}
+.footer-nav a{font-size:15px;color:rgba(255,255,255,.8);text-decoration:none;transition:color .2s;}
+.footer-nav a:hover{color:var(--on-dark);}
+.footer-bottom{border-top:1px solid rgba(240,232,222,.1);padding-top:clamp(20px,3vw,28px);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;}
+.footer-copy{font-size:13px;color:rgba(255,255,255,.8);}
+@media(max-width:1080px){.nav-links{display:none;}.hamburger{display:flex;}}
+@media(max-width:600px){.footer-inner{grid-template-columns:1fr;}.footer-nav{justify-content:flex-start;}.stat-callout{flex-direction:column;gap:.75rem;}}
+html,body{overflow-x:clip;}
+.nav-links a{white-space:nowrap;}
+@media(max-width:1200px){.nav-links{display:none;}.hamburger{display:flex;}}
+.nav-links a:not(.btn){font-size:14px;}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="../index.html"><img src="../header-logo.png" alt="KIYA Wellbeing" style="height:54px;max-width:60vw;object-fit:contain;object-position:left;display:block;"></a>
+    <div class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../individual.html">Individual Sessions</a>
+      <a href="../events.html">Events &amp; Experiences</a>
+      <a href="../corporate.html">Corporate Wellbeing</a>
+      <a href="../blog.html" class="active">Blog</a>
+      <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button style="position:absolute;top:24px;right:24px;background:none;border:none;font-size:28px;cursor:pointer;color:var(--ink-soft);" id="menuClose" aria-label="Close menu">×</button>
+  <a href="../index.html#about">About</a>
+  <a href="../individual.html">Individual Sessions</a>
+  <a href="../events.html">Events &amp; Experiences</a>
+  <a href="../corporate.html">Corporate Wellbeing</a>
+  <a href="../blog.html">Blog</a>
+  <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:8px;">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="post-hero">
+  <div class="container">
+    <div class="post-meta">
+      <span class="post-tag">Corporate Wellbeing</span>
+      <span class="post-date">October 2026</span>
+    </div>
+    <h1>Is your wellbeing program a tick-box? 5 signs.</h1>
+    <p class="post-hero-sub">A quick checklist for HR and People &amp; Culture teams planning the year ahead — and what to do if you tick more than one.</p>
+    <div class="post-author">
+      <div class="post-author-avatar">K</div>
+      <div>
+        <div class="post-author-name">Kim Yates</div>
+        <div class="post-author-role">Founder, Kiya Wellbeing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BODY -->
+<article class="post-body" data-aos="fade-up">
+
+  <p>Early in the year, a lot of HR and People &amp; Culture teams sit down to plan the wellbeing calendar. A webinar in March. Fruit boxes. An app subscription. R U OK? Day in September.</p>
+
+  <p>None of these are bad. But after years of running sessions in workplaces, I've noticed a pattern: the programs that make a real difference look very different from the ones that exist mainly so someone can say "we have a wellbeing program".</p>
+
+  <div class="stat-callout">
+    <div class="stat-callout-num">$10.9b</div>
+    <div class="stat-callout-text">
+      <strong>Every year</strong>
+      The minimum that untreated mental health conditions cost Australian workplaces, through absence, lost productivity and compensation claims.
+    </div>
+  </div>
+  <p class="post-source">Source: PwC and Beyond Blue, Creating a mentally healthy workplace: Return on investment analysis, 2014</p>
+
+  <p>So before you lock in this year's plan, here are five signs your program might be more tick-box than transformation.</p>
+
+  <h2>1. Nobody can name it</h2>
+
+  <p>Ask five people on your team what your wellbeing program is. If you get blank looks, or five different answers, it isn't part of how people experience work. A program people can't name is a program people don't use.</p>
+
+  <h2>2. It lives on the intranet</h2>
+
+  <p>A page of links to an employee assistance program, an app and a PDF about sleep is a resource library, not a program. Resources matter, but people under pressure rarely go looking for them. Wellbeing works best when it shows up in the rhythm of the week: in meetings, at offsites, in the calendar.</p>
+
+  <h2>3. Managers don't turn up</h2>
+
+  <p>If leaders skip the sessions, the team hears the real message loud and clear: this isn't important. When managers join in, breathe alongside their people and talk openly about pressure, everyone else gets permission to do the same.</p>
+
+  <h2>4. It's the same for every team</h2>
+
+  <p>A finance team at quarter-end, a sales team on the road and a customer service team handling difficult calls have very different pressures. One generic program for everyone usually fits no one particularly well. The best programs are designed around what each group is actually dealing with.</p>
+
+  <h2>5. Nobody asked your people</h2>
+
+  <p>This is the big one. If the program was planned without asking employees what's hard, what would help and when they could realistically take part, it's built on guesses. A short survey or a few honest conversations can completely change what you offer.</p>
+
+  <h2>What to do instead</h2>
+
+  <p>If you ticked more than one of those, you're not alone, and the fix doesn't have to be expensive. A wellbeing program that works usually:</p>
+
+  <ul class="post-list">
+    <li><strong>Starts with listening</strong>: ask your people what's hard and what would help</li>
+    <li><strong>Looks at the work itself</strong>: workload, role clarity and how change is managed come first</li>
+    <li><strong>Is designed for your teams</strong>, not taken off the shelf</li>
+    <li><strong>Has leaders taking part</strong>, not just signing off the budget</li>
+    <li><strong>Runs all year</strong>, not just in Mental Health Month</li>
+    <li><strong>Gets reviewed</strong>: what did people use, what changed, what should you try next?</li>
+  </ul>
+
+  <p>In Victoria there's now an extra reason to get this right. Since December 2025, employers must actively manage psychosocial risks like high job demands, and training on its own can't be the main fix. I wrote more about that in <a href="psychological-health-is-now-law-in-victoria.html">Psychological health is now the law in Victoria</a>.</p>
+
+  <div class="stat-callout">
+    <div class="stat-callout-num">$2.30</div>
+    <div class="stat-callout-text">
+      <strong>Back for every $1</strong>
+      The average return on effective workplace mental health action in Australia.
+    </div>
+  </div>
+  <p class="post-source">Source: PwC and Beyond Blue, Creating a mentally healthy workplace: Return on investment analysis, 2014</p>
+
+  <p>Wellbeing isn't a cost line to trim when budgets get tight. Done well, it's one of the better investments a business can make.</p>
+
+  <p>If you're planning your wellbeing year and want a second pair of eyes, I'd love to help you design something your people will actually use.</p>
+
+</article>
+
+<!-- CTA -->
+<section class="post-cta">
+  <div class="post-cta-inner">
+    <div class="label">Plan your wellbeing year</div>
+    <h3>Let's design something that actually works.</h3>
+    <p>A free 30-minute consultation — no obligation, no pitch. Just a conversation about what your team needs and whether Kiya Wellbeing is the right fit.</p>
+    <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary">Book a free consultation</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a class="footer-logo" href="../index.html"><img src="../footer-logo.png" alt="KIYA Wellbeing" style="height:40px;display:block;"></a>
+      <nav class="footer-nav">
+        <a href="../index.html#about">About</a>
+        <a href="../individual.html">Individual</a>
+        <a href="../events.html">Events</a>
+        <a href="../corporate.html">Corporate</a>
+        <a href="../blog.html">Blog</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 KIYA Wellbeing · Kim Yates · Melbourne</span>
+      <a href="https://www.instagram.com/kiya_wellbeing/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,.8);text-decoration:none;">@kiya_wellbeing</a>
+      <a href="https://www.linkedin.com/in/kim-yates-bb508058/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,.8);text-decoration:none;">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({once:true,offset:60,duration:650});
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('open'));
+document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open')));
+</script>
+</body>
+</html>
