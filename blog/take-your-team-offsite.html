@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Take Your Team Offsite: The Power of a Wellbeing Day Retreat — KIYA Wellbeing</title>
+<meta name="description" content="Yoga, breathwork, sound, sauna and cold plunge. Why wellbeing day retreats and offsites help teams and managers step out of their comfort zone, from urban and coastal day retreats to overnight escapes.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=fraunces@400,600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+:root{
+  --teal-bright:#C4837A;
+  --teal-deep:#116E6B;
+  --accent:var(--teal-deep);
+  --ink:#4A3F36;
+  --ink-soft:#4A3F36;
+  --warm:#F4F0EB;
+  --white:#ffffff;
+  --muted:#7A6E65;
+  --faint:#A69E95;
+  --line:#E8DDD0;
+  --on-dark:#F0E8DE;
+  --on-dark-muted:#C4B5A8;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'General Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--white);color:var(--ink-soft);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased;}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;font-weight:700;letter-spacing:-.02em;line-height:1.15;color:var(--teal-deep);}
+.container{max-width:1100px;margin:0 auto;padding:0 clamp(20px,5vw,40px);}
+.label{display:inline-block;font-family:'General Sans',sans-serif;font-size:14px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:1.1rem;}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:'General Sans',sans-serif;font-weight:600;font-size:16px;padding:15px 30px;border-radius:100px;text-decoration:none;cursor:pointer;border:none;transition:transform .2s ease,box-shadow .25s ease,background .2s ease;}
+.btn-primary{background:#116E6B;color:#fff;box-shadow:0 3px 10px rgba(44,33,24,.25);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(44,33,24,.3);}
+.btn-sm{padding:11px 22px;font-size:15px;}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:var(--white);transition:box-shadow .25s ease;border-bottom:1px solid transparent;}
+.nav.scrolled{box-shadow:0 4px 24px rgba(44,33,24,.1);border-bottom-color:var(--line);}
+.nav-inner{max-width:1100px;margin:0 auto;padding:16px clamp(20px,5vw,40px);display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:19px;color:var(--ink-soft);text-decoration:none;letter-spacing:.01em;}
+.nav-logo span{color:var(--teal-deep);}
+.nav-links{display:flex;align-items:center;gap:20px;}
+.nav-links a{font-size:15px;font-weight:600;color:var(--ink-soft);text-decoration:none;transition:color .2s;white-space:nowrap;}
+.nav-links a:hover,.nav-links a.active{color:var(--teal-deep);}
+.nav-links .btn{color:#fff;}
+.nav-links .btn:hover{color:#fff;}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+.hamburger span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.3s;}
+.mobile-menu{display:none;position:fixed;inset:0;background:var(--warm);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:28px;padding:24px;}
+.mobile-menu.open{display:flex;}
+.mobile-menu a{font-size:22px;font-weight:700;font-family:'Fraunces',Georgia,serif;color:var(--ink-soft);text-decoration:none;}
+.mobile-menu a:hover{color:var(--teal-deep);}
+
+/* POST HERO */
+.post-hero{background:var(--warm);padding:clamp(56px,8vw,96px) 0 clamp(40px,6vw,64px);}
+.post-meta{display:flex;align-items:center;gap:16px;margin-bottom:1.5rem;flex-wrap:wrap;}
+.post-tag{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-deep);background:rgba(17,110,107,.1);border:1px solid rgba(17,110,107,.2);border-radius:100px;padding:5px 14px;}
+.post-date{font-size:14px;color:var(--muted);}
+.post-hero h1{font-size:clamp(2rem,6vw,3.8rem);max-width:20ch;margin-bottom:1.25rem;}
+.post-hero-sub{font-size:clamp(1rem,2vw,1.2rem);color:var(--muted);max-width:56ch;line-height:1.7;}
+.post-author{display:flex;align-items:center;gap:12px;margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--line);}
+.post-author-avatar{width:44px;height:44px;border-radius:50%;background:rgba(17,110,107,.15);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:16px;color:var(--teal-deep);flex-shrink:0;}
+.post-author-name{font-weight:600;font-size:15px;color:var(--ink-soft);}
+.post-author-role{font-size:13px;color:var(--muted);}
+
+/* STAT CALLOUT */
+.stat-callout{background:rgba(17,110,107,.07);border:1px solid rgba(17,110,107,.2);border-radius:20px;padding:2rem 2.25rem;margin:2.5rem 0;display:flex;gap:1.5rem;align-items:flex-start;}
+.stat-callout-num{font-family:'Fraunces',Georgia,serif;font-size:clamp(2.8rem,7vw,4rem);font-weight:700;color:var(--teal-deep);line-height:1;flex-shrink:0;}
+.stat-callout-text{font-size:16px;color:var(--ink-soft);line-height:1.6;padding-top:.4rem;}
+.stat-callout-text strong{display:block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:.35rem;}
+
+/* POST BODY */
+.post-body{max-width:680px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,5vw,40px);}
+.post-body p{font-size:17px;line-height:1.85;color:var(--ink-soft);margin-bottom:1.5rem;}
+.post-body p:last-child{margin-bottom:0;}
+.post-body h2{font-size:clamp(1.3rem,3vw,1.7rem);color:var(--teal-deep);margin:2.5rem 0 1rem;}
+.post-figure{margin:2.5rem 0;}
+.post-figure img{width:100%;height:auto;display:block;border-radius:16px;}
+.post-pullquote{border-left:3px solid var(--teal-deep);padding:1rem 0 1rem 1.75rem;margin:2.5rem 0;}
+.post-pullquote p{font-family:'Fraunces',Georgia,serif;font-size:clamp(1.2rem,3vw,1.6rem);line-height:1.3;color:var(--ink-soft);font-style:normal;margin:0;}
+.post-pullquote cite{display:block;font-size:13px;font-style:normal;color:var(--muted);margin-top:.6rem;letter-spacing:.04em;}
+.post-list{margin:0 0 1.75rem 1.25rem;padding:0;}
+.post-list li{font-size:17px;line-height:1.75;color:var(--ink-soft);margin-bottom:.6rem;}
+.post-figure{margin:2.5rem 0;}
+.post-figure img{width:100%;height:auto;display:block;border-radius:16px;}
+.post-body a{color:var(--teal-deep);text-decoration:underline;text-underline-offset:3px;}
+.post-body .post-source{font-size:13px;color:var(--faint);margin-top:-.75rem;margin-bottom:1.5rem;font-style:italic;}
+
+/* CTA BAND */
+.post-cta{background:var(--warm);border-top:1px solid var(--line);padding:clamp(48px,6vw,72px) 0;}
+.post-cta-inner{max-width:680px;margin:0 auto;padding:0 clamp(20px,5vw,40px);}
+.post-cta h3{font-size:clamp(1.4rem,3.5vw,2rem);margin-bottom:.75rem;}
+.post-cta p{font-size:16px;color:var(--muted);margin-bottom:1.75rem;line-height:1.7;}
+
+/* FOOTER */
+footer{background:#116E6B;color:#fff;padding:clamp(48px,7vw,80px) 0 clamp(28px,4vw,40px);}
+.footer-inner{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:start;margin-bottom:clamp(32px,5vw,56px);}
+.footer-logo{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:22px;color:var(--on-dark);text-decoration:none;}
+.footer-logo span{color:var(--teal-bright);}
+.footer-nav{display:flex;flex-wrap:wrap;gap:16px 28px;justify-content:flex-end;}
+.footer-nav a{font-size:15px;color:rgba(255,255,255,.8);text-decoration:none;transition:color .2s;}
+.footer-nav a:hover{color:var(--on-dark);}
+.footer-bottom{border-top:1px solid rgba(240,232,222,.1);padding-top:clamp(20px,3vw,28px);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;}
+.footer-copy{font-size:13px;color:rgba(255,255,255,.8);}
+@media(max-width:1080px){.nav-links{display:none;}.hamburger{display:flex;}}
+@media(max-width:600px){.footer-inner{grid-template-columns:1fr;}.footer-nav{justify-content:flex-start;}.stat-callout{flex-direction:column;gap:.75rem;}}
+html,body{overflow-x:clip;}
+.nav-links a{white-space:nowrap;}
+@media(max-width:1100px){.nav-links{display:none;}.hamburger{display:flex;}}
+.nav-links a:not(.btn){font-size:14px;}
+@media(min-width:1101px){.nav-links a:not(.btn){font-weight:700 !important;border-bottom:0 !important;}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="../index.html"><img src="../header-logo.png" alt="KIYA Wellbeing" style="height:54px;max-width:60vw;object-fit:contain;object-position:left;display:block;"></a>
+    <div class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../corporate.html">Corporate</a>
+      <a href="../individual.html">Individual</a>
+      <a href="../events.html">Events</a>
+      <a href="../library.html">Library</a>
+      <a href="../blog.html" class="active">Blog</a>
+      <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Contact</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button style="position:absolute;top:24px;right:24px;background:none;border:none;font-size:28px;cursor:pointer;color:var(--ink-soft);" id="menuClose" aria-label="Close menu">×</button>
+  <a href="../index.html#about">About</a>
+  <a href="../corporate.html">Corporate</a>
+  <a href="../individual.html">Individual</a>
+  <a href="../events.html">Events</a>
+  <a href="../library.html">Library</a>
+  <a href="../blog.html">Blog</a>
+  <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:8px;">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="post-hero">
+  <div class="container">
+    <div class="post-meta">
+      <span class="post-tag">Corporate Wellbeing</span>
+      <span class="post-date">October 2026</span>
+    </div>
+    <h1>Take your team offsite.</h1>
+    <p class="post-hero-sub">Yoga, breath, sound, sauna and cold plunge. Why a wellbeing day retreat gets teams and managers out of their comfort zone, and back to work stronger together.</p>
+    <div class="post-author">
+      <div class="post-author-avatar">K</div>
+      <div>
+        <div class="post-author-name">Kim Yates</div>
+        <div class="post-author-role">Founder, KIYA Wellbeing</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BODY -->
+<article class="post-body" data-aos="fade-up">
+
+  <p>Think about the last time your team really switched off together. Not a quick lunch between meetings or a few drinks on a Friday, but a full day away from screens, inboxes and the usual roles everyone plays at work.</p>
+
+  <p>For most teams, it's been a while. And that's exactly why getting offsite can be so powerful.</p>
+
+  <figure class="post-figure">
+    <img src="../coastal-retreat.jpg" alt="Kim Yates guiding a team through a yoga session in a light-filled studio on the Mornington Peninsula" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;">
+  </figure>
+
+  <h2>Why getting offsite works</h2>
+
+  <p>In the office, everyone slips straight back into their usual patterns: the same seats, the same conversations, the same pressure. Step into a new environment and something shifts. People slow down, notice more and connect differently.</p>
+
+  <p>A wellbeing day retreat gently takes teams and managers out of their comfort zone. Holding a long breath, sitting in silence for the first time, or stepping into a cold plunge alongside a colleague creates a shared experience that's hard to recreate in a meeting room. Titles fall away. People see each other as people.</p>
+
+  <p>And those moments travel back to the office: more trust, easier conversations and a team that understands what each other needs to do their best work.</p>
+
+  <div class="stat-callout">
+    <div class="stat-callout-num">5×</div>
+    <div class="stat-callout-text">
+      <strong>Longer off work</strong>
+      When a mental health condition leads to a workers' compensation claim in Australia, the median time off work is almost five times longer than for other injuries and illnesses.
+    </div>
+  </div>
+  <p class="post-source">Source: Safe Work Australia, Key Work Health and Safety Statistics Australia 2025</p>
+
+  <h2>What a day retreat can include</h2>
+
+  <p>Every retreat is designed around your team, but a day might weave together:</p>
+
+  <ul class="post-list">
+    <li><strong>Yoga and mindful movement</strong> to release tension held from long hours at a desk</li>
+    <li><strong>Breathwork</strong> as a simple, practical tool for calming the nervous system under pressure</li>
+    <li><strong>Sound healing</strong> for deep rest, where many people find they can finally switch off</li>
+    <li><strong>Sauna and cold plunge</strong> to build resilience, step out of the comfort zone together and leave feeling energised</li>
+    <li><strong>Meditation and reflection</strong> to create space for clarity, gratitude and better decisions</li>
+    <li><strong>Nourishing food and time in nature</strong> to reset the body as well as the mind</li>
+  </ul>
+
+  <div class="stat-callout">
+    <div class="stat-callout-num">29%</div>
+    <div class="stat-callout-text">
+      <strong>Fewer sick days</strong>
+      In a trial of 3,018 adults, people who finished their daily shower with 30 to 90 seconds of cold water reported 29% fewer sick days from work.
+    </div>
+  </div>
+  <p class="post-source">Source: Buijze et al., PLOS ONE, 2016</p>
+
+  <h2>Three ways to get away</h2>
+
+  <ul class="post-list">
+    <li><strong>Urban retreat.</strong> A full day in a calm, beautiful Melbourne space. No long travel, easy to schedule, and a complete change of pace without leaving the city.</li>
+    <li><strong>Coastal day retreat.</strong> Head to the Mornington Peninsula for sea air, open space and a slower rhythm. The drive alone helps people leave work behind.</li>
+    <li><strong>Overnight retreat.</strong> For teams who want to go deeper. An evening practice, a proper night's rest and a fresh morning together create real connection.</li>
+  </ul>
+
+  <div class="stat-callout">
+    <div class="stat-callout-num">120 min</div>
+    <div class="stat-callout-text">
+      <strong>In nature each week</strong>
+      People who spend at least two hours a week in nature are significantly more likely to report good health and high wellbeing, based on a study of nearly 20,000 people.
+    </div>
+  </div>
+  <p class="post-source">Source: White et al., Scientific Reports, 2019</p>
+
+  <h2>Add it to your conference or event</h2>
+
+  <p>Already planning a conference, leadership day or offsite? A wellbeing session can open the day with energy, reset the room after lunch or close things on a meaningful note. With more than 20 years in corporate events, I understand how to fit wellbeing into a run sheet so it adds to the program rather than competing with it.</p>
+
+  <h2>Programs designed around your needs</h2>
+
+  <p>No two teams are the same, so every program is built around what yours is actually dealing with. Topics can include:</p>
+
+  <ul class="post-list">
+    <li><strong>Psychosocial safety</strong> and understanding the new expectations on Victorian workplaces</li>
+    <li><strong>Burnout</strong>: recognising the signs early and what to do about them</li>
+    <li><strong>Authentic leadership</strong> and leading with calm under pressure</li>
+    <li><strong>Community and connection</strong>: building a team that genuinely supports each other</li>
+    <li><strong>Sleep</strong> and why rest is a performance tool, not a luxury</li>
+    <li><strong>Boundaries</strong> that protect energy and prevent overload</li>
+    <li><strong>Meditation and resilience</strong>: practical tools for everyday stress</li>
+    <li><strong>Gratitude</strong> and the small habits that shift a team's mood</li>
+    <li><strong>Nutrition</strong> and the link between what we eat and how we feel</li>
+    <li><strong>Pilates and strength</strong> for bodies that spend too long sitting</li>
+  </ul>
+
+  <p>In Victoria there's an extra reason to invest in this. Employers must now actively manage psychosocial risks like high job demands, and wellbeing programs can play a meaningful supporting role. I wrote more about that in <a href="psychological-health-is-now-law-in-victoria.html">Psychological health is now the law in Victoria</a>.</p>
+
+  <div class="stat-callout">
+    <div class="stat-callout-num">$2.30</div>
+    <div class="stat-callout-text">
+      <strong>Back for every $1</strong>
+      The average return on effective workplace mental health action in Australia.
+    </div>
+  </div>
+  <p class="post-source">Source: PwC and Beyond Blue, Creating a mentally healthy workplace: Return on investment analysis, 2014</p>
+
+  <h2>Ready to take your team offsite?</h2>
+
+  <p>Whether it's a half-day reset, a full day on the coast or an overnight escape, I'd love to help you design an experience your team will remember long after they're back at their desks.</p>
+
+  <p><strong>Step away. Breathe. Come back stronger, together.</strong></p>
+
+  <p class="post-source">Sauna and cold plunge are optional and always offered with guidance. Anyone with a health condition, or who is pregnant, should check with their doctor first.</p>
+
+</article>
+
+<!-- CTA -->
+<section class="post-cta">
+  <div class="post-cta-inner">
+    <div class="label">Plan your team retreat</div>
+    <h3>Let's design something that actually works.</h3>
+    <p>A free 30-minute consultation — no obligation, no pitch. Just a conversation about what your team needs and whether KIYA Wellbeing is the right fit.</p>
+    <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary">Book a free consultation</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <a class="footer-logo" href="../index.html"><img src="../footer-logo.png" alt="KIYA Wellbeing" style="height:40px;display:block;"></a>
+      <nav class="footer-nav">
+        <a href="../index.html#about">About</a>
+        <a href="../corporate.html">Corporate</a>
+        <a href="../individual.html">Individual</a>
+        <a href="../events.html">Events</a>
+        <a href="../library.html">Library</a>
+        <a href="../blog.html">Blog</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 KIYA Wellbeing · Kim Yates · Melbourne</span>
+      <a href="https://www.instagram.com/kiya_wellbeing/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,.8);text-decoration:none;">@kiya_wellbeing</a>
+      <a href="https://www.linkedin.com/in/kim-yates-bb508058/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,.8);text-decoration:none;">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({once:true,offset:60,duration:650});
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40));
+document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobileMenu').classList.add('open'));
+document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
+document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open')));
+</script>
+</body>
+</html>
