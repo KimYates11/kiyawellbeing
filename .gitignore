@@ -1,0 +1,12 @@
+.DS_Store
+event yin violin/
+LinkedIn/
+South Melbourne, 5 September 2026/
+Screenshot*.png
+*.png
+!logos/*.png
+!header-logo.png
+!footer-logo.png
+!og/*.png
+blog/Burnout.jpg
+blog/Int Yoga Day.jpg
