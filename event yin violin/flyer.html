@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Yin &amp; Violin Flyer</title>
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+  :root{
+    --thatch:#565030; --woodland:#8E8B60; --earth:#3D3528; --ivory:#E6DFC9;
+    --ivory-soft:#EFEADB;
+  }
+  @page{size:1240px 1754px;margin:0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--earth)}
+  .flyer{width:1240px;height:1754px;background:var(--ivory);position:relative;overflow:hidden;
+    font-family:'Jost',sans-serif;color:var(--earth)}
+
+  /* ---------- top ---------- */
+  .top{display:grid;grid-template-columns:690px 550px;grid-template-rows:975px;height:975px}
+  .panel{background:var(--earth);color:var(--ivory);padding:76px 72px 60px 84px;
+    display:flex;flex-direction:column;position:relative}
+  .panel::after{content:"";position:absolute;inset:28px 0 28px 28px;border:1px solid rgba(230,223,201,.18);border-right:0;pointer-events:none}
+  .brand{display:block;width:430px;height:auto}
+  .presents{font-size:15px;letter-spacing:.42em;color:var(--woodland);margin-top:22px;text-transform:uppercase}
+  .eyebrow{margin-top:auto;padding-top:20px;font-size:16px;letter-spacing:.38em;text-transform:uppercase;color:var(--woodland)}
+  h1{font-family:'Fraunces',serif;font-weight:300;font-size:168px;line-height:.88;letter-spacing:-.02em;margin-top:22px;color:var(--ivory)}
+  h1 .amp{font-style:italic;color:var(--woodland);font-weight:300}
+  .rule{display:flex;align-items:center;gap:18px;margin:38px 0 24px}
+  .rule span{height:1px;background:var(--woodland);flex:1;opacity:.7}
+  .rule svg{width:34px;height:20px;color:var(--woodland)}
+  .tagline{font-size:22px;letter-spacing:.42em;text-transform:uppercase;color:var(--ivory);font-weight:400}
+  .tagline i{font-style:normal;color:var(--woodland);margin:0 .25em}
+  .lede{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:31px;line-height:1.35;margin-top:34px;color:var(--ivory);opacity:.92}
+
+  .photo{position:relative;background:var(--earth);overflow:hidden}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block;filter:saturate(.82) sepia(.12)}
+  .photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(61,53,40,.55),rgba(61,53,40,0) 22%);z-index:1}
+
+  /* ---------- bottom ---------- */
+  .bottom{padding:52px 84px 0}
+  .intro{font-family:'Fraunces',serif;font-weight:300;font-size:24px;line-height:1.55;color:var(--earth);text-align:center;max-width:1040px;margin:0 auto}
+  .intro b{font-weight:400;color:var(--thatch)}
+
+  .details{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:40px;border-top:1px solid rgba(86,80,48,.35);border-bottom:1px solid rgba(86,80,48,.35)}
+  .d{padding:28px 20px 26px;text-align:center}
+  .d + .d{border-left:1px solid rgba(86,80,48,.35)}
+  .d svg{width:30px;height:30px;color:var(--woodland);margin-bottom:12px}
+  .label{font-size:14px;letter-spacing:.36em;text-transform:uppercase;color:var(--woodland);font-weight:500}
+  .val{font-family:'Fraunces',serif;font-size:31px;font-weight:400;color:var(--earth);margin-top:10px;line-height:1.15}
+  .sub{font-size:18px;letter-spacing:.06em;color:var(--thatch);margin-top:8px}
+
+  .with{display:flex;justify-content:center;gap:56px;margin-top:30px;text-align:center}
+  .with .name{font-family:'Fraunces',serif;font-size:28px;color:var(--earth)}
+  .with .role{font-size:15px;letter-spacing:.26em;text-transform:uppercase;color:var(--woodland);margin-top:6px}
+  .with .amp2{font-family:'Fraunces',serif;font-style:italic;font-size:34px;color:var(--woodland);align-self:center}
+
+  .footer{position:absolute;left:0;right:0;bottom:0;height:180px;background:var(--thatch);color:var(--ivory);
+    display:grid;grid-template-columns:1fr auto;align-items:center;padding:0 84px;gap:40px}
+  .charity{font-size:19px;line-height:1.5;color:var(--ivory);max-width:640px}
+  .charity b{font-weight:500}
+  .charity .lim{display:block;margin-top:8px;font-size:15px;letter-spacing:.32em;text-transform:uppercase;color:#C9C49A}
+  .cta{text-align:right}
+  .btn{display:inline-block;background:var(--ivory);color:var(--earth);font-size:19px;letter-spacing:.34em;text-transform:uppercase;
+    padding:22px 40px;border-radius:999px;font-weight:500}
+  .site{font-size:16px;letter-spacing:.2em;margin-top:14px;color:#C9C49A}
+</style>
+</head>
+<body>
+<div class="flyer">
+  <section class="top">
+    <div class="panel">
+      <img class="brand" src="kiya-logo-ivory.png" alt="KIYA Wellbeing — Meditation. Mindfulness. Reiki. Retreats. Yoga">
+      <div class="presents">Presents</div>
+
+      <div class="eyebrow">A candlelit special event</div>
+      <h1>Yin <span class="amp">&amp;</span><br>Violin</h1>
+
+      <div class="rule"><span></span>
+        <svg viewBox="0 0 34 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path d="M17 2c3 3 4 8 0 14-4-6-3-11 0-14z"/><path d="M17 16c-4-1-8-4-9-9 4 0 8 3 9 9zM17 16c4-1 8-4 9-9-4 0-8 3-9 9z"/><path d="M4 18h26"/></svg>
+      <span></span></div>
+      <div class="tagline">Rest<i>·</i>Resonance<i>·</i>Release</div>
+      <p class="lede">A beautiful evening of movement, music and deep restoration.</p>
+    </div>
+    <div class="photo"><img src="flyer-photo.png" alt="Jessica Leigh playing violin while Kim Yates offers a gentle assist in candlelight"></div>
+  </section>
+
+  <section class="bottom">
+    <p class="intro">An intimate candlelit journey of <b>Yin Yoga</b> and live violin, where soulful resonance flows throughout the practice, closing with singing bowls, chimes and deep Savasana. Violin by <b>Jessica Leigh</b>, a Melbourne violinist who performs with the Melbourne Symphony Orchestra and with <b>Cedar Collective</b>, playing alongside other musicians at weddings and corporate events. <b>All levels welcome</b> — no yoga experience needed.</p>
+
+    <div class="details">
+      <div class="d">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <div class="label">Date</div>
+        <div class="val">Sun 13 Dec 2026</div>
+        <div class="sub">7:00 – 8:30pm</div>
+      </div>
+      <div class="d">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <div class="label">Venue</div>
+        <div class="val">Grassroots Studio</div>
+        <div class="sub">St Kilda</div>
+      </div>
+      <div class="d">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.3"/></svg>
+        <div class="label">Tickets</div>
+        <div class="val">$88</div>
+        <div class="sub">+ booking fee</div>
+      </div>
+    </div>
+
+    <div class="with">
+      <div><div class="name">Kim Yates</div><div class="role">Yin Yoga · Sound Healing</div></div>
+      <div class="amp2">&amp;</div>
+      <div><div class="name">Jessica Leigh</div><div class="role">Live Violin</div></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p class="charity"><b>$10 from every ticket</b> goes to Sacred Heart Mission to support people experiencing homelessness.
+      <span class="lim">Spaces limited</span></p>
+    <div class="cta">
+      <div class="btn">Book your spot →</div>
+      <div class="site">kiyawellbeing.com &nbsp;·&nbsp; cedarcollective.com.au</div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

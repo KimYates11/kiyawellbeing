@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Yin &amp; Violin Instagram</title>
+<link href="fonts/fonts.css" rel="stylesheet">
+<style>
+  :root{--thatch:#565030;--woodland:#8E8B60;--earth:#3D3528;--ivory:#E6DFC9}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--earth)}
+  .post{width:1080px;height:1350px;background:var(--ivory);position:relative;overflow:hidden;font-family:'Jost',sans-serif;color:var(--earth)}
+
+  .top{display:grid;grid-template-columns:600px 480px;grid-template-rows:965px;height:965px}
+  .panel{background:var(--earth);color:var(--ivory);padding:64px 56px 52px 68px;display:flex;flex-direction:column;position:relative}
+  .panel::after{content:"";position:absolute;inset:24px 0 24px 24px;border:1px solid rgba(230,223,201,.18);border-right:0;pointer-events:none}
+  .brand{display:block;width:380px;height:auto}
+  .presents{font-size:14px;letter-spacing:.42em;color:var(--woodland);margin-top:20px;text-transform:uppercase}
+  .eyebrow{margin-top:auto;font-size:15px;letter-spacing:.36em;text-transform:uppercase;color:var(--woodland)}
+  h1{font-family:'Fraunces',serif;font-weight:300;font-size:150px;line-height:.88;letter-spacing:-.02em;margin-top:20px;color:var(--ivory)}
+  h1 .amp{font-style:italic;color:var(--woodland)}
+  .rule{display:flex;align-items:center;gap:16px;margin:34px 0 22px}
+  .rule span{height:1px;background:var(--woodland);flex:1;opacity:.7}
+  .rule svg{width:32px;height:19px;color:var(--woodland)}
+  .tagline{font-size:19px;letter-spacing:.38em;text-transform:uppercase;font-weight:400}
+  .tagline i{font-style:normal;color:var(--woodland);margin:0 .2em}
+  .lede{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:27px;line-height:1.35;margin-top:26px;opacity:.92}
+
+  .photo{position:relative;overflow:hidden}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:center 25%;display:block;filter:saturate(.82) sepia(.12)}
+  .photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(61,53,40,.55),rgba(61,53,40,0) 22%);z-index:1}
+
+  .details{display:grid;grid-template-columns:1fr 1fr 1fr;margin:0 68px;padding-top:36px}
+  .d{text-align:center;padding:0 14px}
+  .d + .d{border-left:1px solid rgba(86,80,48,.35)}
+  .label{font-size:13px;letter-spacing:.36em;text-transform:uppercase;color:var(--woodland);font-weight:500}
+  .val{font-family:'Fraunces',serif;font-size:29px;margin-top:10px;line-height:1.15}
+  .sub{font-size:17px;letter-spacing:.06em;color:var(--thatch);margin-top:6px}
+  .with{text-align:center;margin-top:26px;font-family:'Fraunces',serif;font-size:23px;color:var(--earth)}
+  .with i{color:var(--woodland);margin:0 .35em}
+  .with small{font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--woodland);margin-left:.6em}
+
+  .footer{position:absolute;left:0;right:0;bottom:0;height:150px;background:var(--thatch);color:var(--ivory);
+    display:grid;grid-template-columns:1fr auto;align-items:center;padding:0 68px;gap:30px}
+  .charity{font-size:17px;line-height:1.45;max-width:520px}
+  .charity b{font-weight:500}
+  .charity .lim{display:block;margin-top:6px;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:#C9C49A}
+  .btn{background:var(--ivory);color:var(--earth);font-size:16px;letter-spacing:.3em;text-transform:uppercase;padding:20px 32px;border-radius:999px;font-weight:500}
+</style>
+</head>
+<body>
+<div class="post">
+  <section class="top">
+    <div class="panel">
+      <img class="brand" src="kiya-logo-ivory.png" alt="KIYA Wellbeing">
+      <div class="presents">Presents</div>
+      <div class="eyebrow">A candlelit special event</div>
+      <h1>Yin <span class="amp">&amp;</span><br>Violin</h1>
+      <div class="rule"><span></span>
+        <svg viewBox="0 0 34 20" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path d="M17 2c3 3 4 8 0 14-4-6-3-11 0-14z"/><path d="M17 16c-4-1-8-4-9-9 4 0 8 3 9 9zM17 16c4-1 8-4 9-9-4 0-8 3-9 9z"/><path d="M4 18h26"/></svg>
+      <span></span></div>
+      <div class="tagline">Rest<i>·</i>Resonance<i>·</i>Release</div>
+      <p class="lede">A beautiful evening of movement, music and deep restoration.</p>
+    </div>
+    <div class="photo"><img src="flyer-photo.png" alt=""></div>
+  </section>
+
+  <div class="details">
+    <div class="d"><div class="label">Date</div><div class="val">Sun 13 Dec</div><div class="sub">7:00 – 8:30pm</div></div>
+    <div class="d"><div class="label">Venue</div><div class="val">Grassroots Studio</div><div class="sub">St Kilda</div></div>
+    <div class="d"><div class="label">Tickets</div><div class="val">$88</div><div class="sub">+ booking fee</div></div>
+  </div>
+  <p class="with">Kim Yates<small>Yin Yoga · Sound</small><i>&amp;</i>Jessica Leigh<small>Live Violin</small></p>
+
+  <footer class="footer">
+    <p class="charity"><b>$10 from every ticket</b> goes to Sacred Heart Mission to support people experiencing homelessness.<span class="lim">Spaces limited</span></p>
+    <div class="btn">Link in bio →</div>
+  </footer>
+</div>
+</body>
+</html>
