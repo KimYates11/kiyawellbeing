@@ -690,7 +690,173 @@
   .nav-cta{margin-left:0;}
 }
 @media(min-width:1101px){.nav-links a:not(.btn){font-weight:700 !important;border-bottom:0 !important;}}
+    /* FAQ */
+    .faq-section { padding: clamp(56px,8vw,96px) 0; }
+    .faq-intro { text-align: center; margin-bottom: clamp(28px,4vw,44px); }
+    .faq-wrap { max-width: 780px; margin: 0 auto; }
+    .faq-group { margin-bottom: 2rem; }
+    .faq-group-title { font-size: 1.15rem; color: var(--teal-deep); margin-bottom: .75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--line); border-radius: 14px; margin-bottom: .6rem; overflow: hidden; }
+    .faq-item summary { cursor: pointer; list-style: none; padding: 1rem 3rem 1rem 1.25rem; font-weight: 600; font-size: 1rem; color: var(--ink-soft); position: relative; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.25rem; top: 50%; transform: translateY(-50%); font-size: 1.4rem; font-weight: 400; color: var(--teal-deep); transition: transform .2s; }
+    .faq-item[open] summary::after { content: '\2212'; }
+    .faq-item summary:hover { color: var(--teal-deep); }
+    .faq-answer { padding: 0 1.25rem 1.1rem; }
+    .faq-answer p { font-size: .95rem; line-height: 1.7; color: var(--muted); margin: 0; }
 </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Reiki?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reiki is a gentle Japanese energy healing practice that supports deep relaxation and balance. Using light touch or hands hovering just above the body, I help calm your nervous system and create space for your body to rest and restore."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens in a Reiki session?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You'll lie comfortably on a mat or table, fully clothed, with a pillow and blanket. We start with a short chat about how you're feeling, then you simply rest while I work. Many people feel warmth, tingling, emotional release or drift into a deep, sleep-like state. There's no right or wrong experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to undress?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You stay fully clothed for the whole session. Just wear something comfortable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many sessions will I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It's completely up to you. Some people book a single session when they need a reset, while others come regularly as part of their self-care. We can chat about what feels right for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Reiki a replacement for medical care?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Reiki is a complementary practice that works alongside, not instead of, medical or mental health care. Please keep seeing your doctor or health professional for any health concerns."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in Rest & Reset?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rest & Reset is my signature 2-hour session combining guided breathwork, meditation, yin yoga and Reiki, with optional sound healing. It's designed as a full nervous system reset when you need more than a single practice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rest & Reset is $220 for the full 2-hour experience."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need any experience?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not at all. Everything is gentle and guided, and I'll adapt each part to suit you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a sound bath?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A sound bath is a deeply relaxing experience where you lie down and rest while I play instruments such as crystal singing bowls, chimes and tingshas. The sound and vibration help many people slow their breath, quieten their mind and drop into deep relaxation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need experience?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No experience is needed. All you need to do is lie down, get comfortable and listen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I wear or bring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wear something comfortable and warm. I provide mats, bolsters and blankets, but you're welcome to bring your own blanket or eye pillow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need any experience?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Private sessions are tailored to you, whether you're brand new or have practised for years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where are private sessions held?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sessions can be held in a local park or a peaceful home courtyard in Caulfield North, or online if that suits you better."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I book a session for a small group?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I can provide mats, bolsters and blocks for up to 10 people, so it's easy to book a private session for friends, family or a small team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I join if I'm pregnant or have an injury?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Just let me know before your session and I'll adapt the practice to suit your body."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I pay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Private sessions can be paid by Stripe or PayID. I'll send the details when you book."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I need to cancel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Life happens. If you can't make your session, just let me know and we'll transfer your booking to a new date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are you qualified and insured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I'm qualified in yoga, Reiki, meditation and breathwork, hold a current first aid certificate, and have full public liability and professional indemnity insurance. Certificates are available on request."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -901,6 +1067,105 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="sec-warm faq-section">
+    <div class="container">
+      <div class="faq-intro" data-aos="fade-up">
+        <span class="section-label">FAQs</span>
+        <h2>Your questions, answered.</h2>
+      </div>
+      <div class="faq-wrap">
+        <div class="faq-group" data-aos="fade-up">
+          <h3 class="faq-group-title">Reiki</h3>
+          <details class="faq-item">
+            <summary>What is Reiki?</summary>
+            <div class="faq-answer"><p>Reiki is a gentle Japanese energy healing practice that supports deep relaxation and balance. Using light touch or hands hovering just above the body, I help calm your nervous system and create space for your body to rest and restore.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>What happens in a Reiki session?</summary>
+            <div class="faq-answer"><p>You&#x27;ll lie comfortably on a mat or table, fully clothed, with a pillow and blanket. We start with a short chat about how you&#x27;re feeling, then you simply rest while I work. Many people feel warmth, tingling, emotional release or drift into a deep, sleep-like state. There&#x27;s no right or wrong experience.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need to undress?</summary>
+            <div class="faq-answer"><p>No. You stay fully clothed for the whole session. Just wear something comfortable.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>How many sessions will I need?</summary>
+            <div class="faq-answer"><p>It&#x27;s completely up to you. Some people book a single session when they need a reset, while others come regularly as part of their self-care. We can chat about what feels right for you.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Is Reiki a replacement for medical care?</summary>
+            <div class="faq-answer"><p>No. Reiki is a complementary practice that works alongside, not instead of, medical or mental health care. Please keep seeing your doctor or health professional for any health concerns.</p></div>
+          </details>
+        </div>
+        <div class="faq-group" data-aos="fade-up">
+          <h3 class="faq-group-title">Rest &amp; Reset Experience</h3>
+          <details class="faq-item">
+            <summary>What&#x27;s included in Rest &amp; Reset?</summary>
+            <div class="faq-answer"><p>Rest &amp; Reset is my signature 2-hour session combining guided breathwork, meditation, yin yoga and Reiki, with optional sound healing. It&#x27;s designed as a full nervous system reset when you need more than a single practice.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>How much does it cost?</summary>
+            <div class="faq-answer"><p>Rest &amp; Reset is $220 for the full 2-hour experience.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need any experience?</summary>
+            <div class="faq-answer"><p>Not at all. Everything is gentle and guided, and I&#x27;ll adapt each part to suit you.</p></div>
+          </details>
+        </div>
+        <div class="faq-group" data-aos="fade-up">
+          <h3 class="faq-group-title">Sound healing</h3>
+          <details class="faq-item">
+            <summary>What is a sound bath?</summary>
+            <div class="faq-answer"><p>A sound bath is a deeply relaxing experience where you lie down and rest while I play instruments such as crystal singing bowls, chimes and tingshas. The sound and vibration help many people slow their breath, quieten their mind and drop into deep relaxation.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need experience?</summary>
+            <div class="faq-answer"><p>No experience is needed. All you need to do is lie down, get comfortable and listen.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>What should I wear or bring?</summary>
+            <div class="faq-answer"><p>Wear something comfortable and warm. I provide mats, bolsters and blankets, but you&#x27;re welcome to bring your own blanket or eye pillow.</p></div>
+          </details>
+        </div>
+        <div class="faq-group" data-aos="fade-up">
+          <h3 class="faq-group-title">Private yoga, meditation and breathwork</h3>
+          <details class="faq-item">
+            <summary>Do I need any experience?</summary>
+            <div class="faq-answer"><p>No. Private sessions are tailored to you, whether you&#x27;re brand new or have practised for years.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Where are private sessions held?</summary>
+            <div class="faq-answer"><p>Sessions can be held in a local park or a peaceful home courtyard in Caulfield North, or online if that suits you better.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Can I book a session for a small group?</summary>
+            <div class="faq-answer"><p>Yes. I can provide mats, bolsters and blocks for up to 10 people, so it&#x27;s easy to book a private session for friends, family or a small team.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Can I join if I&#x27;m pregnant or have an injury?</summary>
+            <div class="faq-answer"><p>Yes. Just let me know before your session and I&#x27;ll adapt the practice to suit your body.</p></div>
+          </details>
+        </div>
+        <div class="faq-group" data-aos="fade-up">
+          <h3 class="faq-group-title">Booking and practicalities</h3>
+          <details class="faq-item">
+            <summary>How do I pay?</summary>
+            <div class="faq-answer"><p>Private sessions can be paid by Stripe or PayID. I&#x27;ll send the details when you book.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>What if I need to cancel?</summary>
+            <div class="faq-answer"><p>Life happens. If you can&#x27;t make your session, just let me know and we&#x27;ll transfer your booking to a new date.</p></div>
+          </details>
+          <details class="faq-item">
+            <summary>Are you qualified and insured?</summary>
+            <div class="faq-answer"><p>Yes. I&#x27;m qualified in yoga, Reiki, meditation and breathwork, hold a current first aid certificate, and have full public liability and professional indemnity insurance. Certificates are available on request.</p></div>
+          </details>
+        </div>
       </div>
     </div>
   </section>
