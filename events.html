@@ -748,7 +748,166 @@
   .nav-cta{margin-left:0;}
 }
 @media(min-width:1101px){.nav-links a:not(.btn){font-weight:700 !important;border-bottom:0 !important;}}
+    /* FAQ */
+    .faq-section { padding: clamp(56px,8vw,96px) 0; }
+    .faq-intro { text-align: center; margin-bottom: clamp(28px,4vw,44px); }
+    .faq-wrap { max-width: 780px; margin: 0 auto; }
+    .faq-group { margin-bottom: 2rem; }
+    .faq-group-title { font-size: 1.15rem; color: var(--teal-deep); margin-bottom: .75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--line); border-radius: 14px; margin-bottom: .6rem; overflow: hidden; }
+    .faq-item summary { cursor: pointer; list-style: none; padding: 1rem 3rem 1rem 1.25rem; font-weight: 600; font-size: 1rem; color: var(--ink-soft); position: relative; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.25rem; top: 50%; transform: translateY(-50%); font-size: 1.4rem; font-weight: 400; color: var(--teal-deep); transition: transform .2s; }
+    .faq-item[open] summary::after { content: '\2212'; }
+    .faq-item summary:hover { color: var(--teal-deep); }
+    .faq-answer { padding: 0 1.25rem 1.1rem; }
+    .faq-answer p { font-size: .95rem; line-height: 1.7; color: var(--muted); margin: 0; }
+    .faq-answer a { color: var(--teal-deep); text-decoration: underline; text-underline-offset: 3px; }
 </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need to bring a mat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Mats, bolsters, blocks and blankets are provided at all events. Just bring yourself."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I wear and bring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wear comfortable, warm clothes you can move and relax in. Bring a water bottle, and an eye mask if you like. A journal is optional but lovely for reflecting afterwards."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What time should I arrive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Please arrive around 10 minutes early so you can settle in, find your spot and arrive in your body before we begin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there parking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Grassroots Studio in St Kilda has its own parking. For FlowSt8 in Glen Iris and INNDRIYA Studio in Highett, there's street parking nearby and both are close to a train station."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I come on my own?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Many people come on their own, and everyone is welcomed warmly. No experience is needed for any of my events."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a minimum age?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Events are suitable from age 6 when accompanied by a parent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "I'm pregnant or have an injury. Can I still join?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Just let me know when you book or when you arrive, and I'll adapt the practice to suit your body."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I have to have acupuncture at Yin.Pin.Sound?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, acupuncture is completely optional. If you'd prefer not to have needles, ear seed stickers can be used instead for a similar effect."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I book and pay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Events are booked and paid through Eventbrite. Just click Book your spot on the event you'd like to attend."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I can't make it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Life happens. If you can't attend, let me know and your booking can be transferred to a future date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's included in a retreat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Retreats include accommodation (for overnight retreats), meals and all activities. Exact details will be shared for each retreat as dates are confirmed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is accommodation shared or private?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shared accommodation options will be available for overnight retreats."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you cater for dietary requirements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Dietary requirements are catered for. Just let me know when you book."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a deposit required?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. A 50% deposit secures your place on a retreat."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When can I book a 2027 retreat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bookings open from January 2027. To be the first to hear, join the waitlist by emailing hello@kiyawellbeing.com, and follow @kiya_wellbeing on Instagram for updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer gift vouchers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Gift vouchers are available on request. Just get in touch and I'll arrange one for you."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my company book a private event?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. I create bespoke, private events for teams, onsite at your workplace or offsite at a venue of your choice. Visit my Corporate page or get in touch to start planning."
+      }
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -1053,6 +1212,95 @@
   </div>
 </section>
 
+
+<!-- ─── FAQ ─── -->
+<section class="sec-light faq-section">
+  <div class="container">
+    <div class="faq-intro" data-aos="fade-up">
+      <span class="section-label">FAQs</span>
+      <h2>Your questions, answered.</h2>
+    </div>
+    <div class="faq-wrap">
+      <div class="faq-group" data-aos="fade-up">
+        <h3 class="faq-group-title">Events &amp; workshops</h3>
+        <details class="faq-item">
+          <summary>Do I need to bring a mat?</summary>
+          <div class="faq-answer"><p>No. Mats, bolsters, blocks and blankets are provided at all events. Just bring yourself.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What should I wear and bring?</summary>
+          <div class="faq-answer"><p>Wear comfortable, warm clothes you can move and relax in. Bring a water bottle, and an eye mask if you like. A journal is optional but lovely for reflecting afterwards.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What time should I arrive?</summary>
+          <div class="faq-answer"><p>Please arrive around 10 minutes early so you can settle in, find your spot and arrive in your body before we begin.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Is there parking?</summary>
+          <div class="faq-answer"><p>Grassroots Studio in St Kilda has its own parking. For FlowSt8 in Glen Iris and INNDRIYA Studio in Highett, there&#x27;s street parking nearby and both are close to a train station.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I come on my own?</summary>
+          <div class="faq-answer"><p>Absolutely. Many people come on their own, and everyone is welcomed warmly. No experience is needed for any of my events.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Is there a minimum age?</summary>
+          <div class="faq-answer"><p>Events are suitable from age 6 when accompanied by a parent.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>I&#x27;m pregnant or have an injury. Can I still join?</summary>
+          <div class="faq-answer"><p>Yes. Just let me know when you book or when you arrive, and I&#x27;ll adapt the practice to suit your body.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Do I have to have acupuncture at Yin.Pin.Sound?</summary>
+          <div class="faq-answer"><p>No, acupuncture is completely optional. If you&#x27;d prefer not to have needles, ear seed stickers can be used instead for a similar effect.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>How do I book and pay?</summary>
+          <div class="faq-answer"><p>Events are booked and paid through Eventbrite. Just click Book your spot on the event you&#x27;d like to attend.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>What if I can&#x27;t make it?</summary>
+          <div class="faq-answer"><p>Life happens. If you can&#x27;t attend, let me know and your booking can be transferred to a future date.</p></div>
+        </details>
+      </div>
+      <div class="faq-group" data-aos="fade-up">
+        <h3 class="faq-group-title">Retreats</h3>
+        <details class="faq-item">
+          <summary>What&#x27;s included in a retreat?</summary>
+          <div class="faq-answer"><p>Retreats include accommodation (for overnight retreats), meals and all activities. Exact details will be shared for each retreat as dates are confirmed.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Is accommodation shared or private?</summary>
+          <div class="faq-answer"><p>Shared accommodation options will be available for overnight retreats.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Can you cater for dietary requirements?</summary>
+          <div class="faq-answer"><p>Yes. Dietary requirements are catered for. Just let me know when you book.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Is a deposit required?</summary>
+          <div class="faq-answer"><p>Yes. A 50% deposit secures your place on a retreat.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>When can I book a 2027 retreat?</summary>
+          <div class="faq-answer"><p>Bookings open from January 2027. To be the first to hear, join the waitlist by emailing <a href="mailto:hello@kiyawellbeing.com?subject=Retreat%20waitlist">hello@kiyawellbeing.com</a>, and follow <a href="https://www.instagram.com/kiya_wellbeing/" target="_blank" rel="noopener">@kiya_wellbeing</a> on Instagram for updates.</p></div>
+        </details>
+      </div>
+      <div class="faq-group" data-aos="fade-up">
+        <h3 class="faq-group-title">Gifts &amp; groups</h3>
+        <details class="faq-item">
+          <summary>Do you offer gift vouchers?</summary>
+          <div class="faq-answer"><p>Yes. Gift vouchers are available on request. Just get in touch and I&#x27;ll arrange one for you.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Can my company book a private event?</summary>
+          <div class="faq-answer"><p>Yes. I create bespoke, private events for teams, onsite at your workplace or offsite at a venue of your choice. Visit my <a href="corporate.html">Corporate page</a> or get in touch to start planning.</p></div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- ─── 4. Dark CTA ─── -->
 <section class="sec-cta sec-warm">
