@@ -573,6 +573,13 @@
     }
 
     /* ═══════════════════════════════════════
+       BOOKING
+    ═══════════════════════════════════════ */
+    .booking-intro { max-width: 640px; margin: 0 auto 2.5rem; text-align: center; }
+    .booking-intro p { color: var(--muted); line-height: 1.65; }
+    .booking-embed { width: 100%; min-height: 640px; overflow: auto; border-radius: 24px; border: 1px solid var(--line); }
+
+    /* ═══════════════════════════════════════
        DARK CTA
     ═══════════════════════════════════════ */
     .dark-cta {
@@ -876,7 +883,7 @@
         <li><a href="blog.html">Blog</a></li>
       </ul>
 
-      <a class="btn btn-primary nav-cta" href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener">Contact</a>
+      <a class="btn btn-primary nav-cta" href="#book">Contact</a>
 
       <button class="hamburger" aria-label="Open menu" aria-expanded="false" id="hamburger">
         <span></span><span></span><span></span>
@@ -890,7 +897,7 @@
       <a href="events.html">Events</a>
       <a href="library.html">Library</a>
       <a href="blog.html">Blog</a>
-      <a class="btn btn-primary" href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener">Contact</a>
+      <a class="btn btn-primary" href="#book">Contact</a>
     </div>
   </nav>
 
@@ -902,7 +909,7 @@
       <h1 data-aos="fade-up" data-aos-delay="80">Rest. Reset. Come home<br>to yourself.</h1>
       <p class="lead" data-aos="fade-up" data-aos-delay="160">Private 1:1 sessions designed to meet you exactly where you are — no experience needed, no pressure, just space to breathe.</p>
       <div class="hero-actions" data-aos="fade-up" data-aos-delay="240">
-        <a class="btn btn-primary" href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener">Book a complementary call</a>
+        <a class="btn btn-primary" href="https://cal.com/kiyawellbeing/discovery-chat" data-book="discovery-chat">Book a complimentary call</a>
       </div>
     </div>
   </section>
@@ -1170,6 +1177,18 @@
     </div>
   </section>
 
+  <!-- ═══ BOOKING ═══ -->
+  <section class="sec-light booking-section" id="book">
+    <div class="container">
+      <div class="booking-intro" data-aos="fade-up">
+        <span class="section-label">Book a session</span>
+        <h2>Find a time that suits you.</h2>
+        <p>Choose a free 15-minute chat, Reiki online or in person, or the 2-hour Rest &amp; Reset, then pick a time. Sessions run Thursday 12–4pm and Friday and Saturday 2–5pm.</p>
+      </div>
+      <div class="booking-embed" data-cal-inline=""></div>
+    </div>
+  </section>
+
   <!-- ═══ DARK CTA ═══ -->
   <section class="dark-cta" style="background:var(--warm);padding:clamp(56px,8vw,96px) 0;">
     <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center;">
@@ -1178,7 +1197,7 @@
         <h2 data-aos="fade-up" data-aos-delay="80">Your first session starts with a conversation.</h2>
         <p class="sub" data-aos="fade-up" data-aos-delay="160">Discovery calls are free — book a 15-minute chat to find the right session for you.</p>
         <div class="cta-actions" data-aos="fade-up" data-aos-delay="240">
-          <a class="btn btn-primary" href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener">Book a complementary call</a>
+          <a class="btn btn-primary" href="https://cal.com/kiyawellbeing/discovery-chat" data-book="discovery-chat">Book a complimentary call</a>
         </div>
       </div>
       <div data-aos="fade-left" data-aos-delay="120" style="border-radius:24px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 24px 48px rgba(44,33,24,.12);">
@@ -1223,5 +1242,6 @@
     });
   </script>
 
+  <script src="booking.js" defer></script>
 </body>
 </html>

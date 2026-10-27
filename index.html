@@ -641,7 +641,7 @@ html,body{overflow-x:clip;}
       <h2 style="max-width:16ch;margin:0 auto 1.25rem;">Your first step is a conversation.</h2>
       <p class="cta-lead" style="color:var(--muted);">Whether you're curious about yoga, need corporate wellbeing support, or want to book a retreat — reach out. Discovery calls are free and there's no pressure.</p>
       <div class="hero-btns" style="justify-content:center;">
-        <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary">Book a free call</a>
+        <a class="btn btn-primary" href="https://cal.com/kiyawellbeing" data-book="">Book a free call</a>
         <a href="https://www.eventbrite.com.au/o/72706899423" target="_blank" rel="noopener" class="btn btn-ghost">Browse all events</a>
         <a href="mailto:hello@kiyawellbeing.com" class="btn btn-ghost">Email Kim</a>
       </div>
@@ -720,5 +720,6 @@ hamburger.addEventListener('click',()=>mobileMenu.classList.toggle('open'));
 menuClose.addEventListener('click',()=>mobileMenu.classList.remove('open'));
 document.querySelectorAll('.menu-link').forEach(l=>l.addEventListener('click',()=>mobileMenu.classList.remove('open')));
 </script>
+  <script src="booking.js" defer></script>
 </body>
 </html>

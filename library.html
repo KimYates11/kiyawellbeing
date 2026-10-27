@@ -169,7 +169,7 @@ html,body{overflow-x:clip;}
       <a href="events.html">Events</a>
       <a href="library.html" class="active">Library</a>
       <a href="blog.html">Blog</a>
-      <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Contact</a>
+      <a class="btn btn-primary btn-sm" href="https://cal.com/kiyawellbeing" data-book="">Contact</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
@@ -185,7 +185,7 @@ html,body{overflow-x:clip;}
   <a href="events.html">Events</a>
   <a href="library.html">Library</a>
   <a href="blog.html">Blog</a>
-  <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:8px;">Contact</a>
+  <a class="btn btn-primary" style="margin-top:8px;" href="https://cal.com/kiyawellbeing" data-book="">Contact</a>
 </div>
 
 <!-- HERO -->
@@ -253,5 +253,6 @@ document.getElementById('hamburger').addEventListener('click',()=>document.getEl
 document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
 document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open')));
 </script>
+  <script src="booking.js" defer></script>
 </body>
 </html>

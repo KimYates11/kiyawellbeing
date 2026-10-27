@@ -186,7 +186,7 @@ html,body{overflow-x:clip;}
       <a href="../events.html">Events</a>
       <a href="../library.html">Library</a>
       <a href="../blog.html" class="active">Blog</a>
-      <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Contact</a>
+      <a class="btn btn-primary btn-sm" href="https://cal.com/kiyawellbeing" data-book="">Contact</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Open menu">
       <span></span><span></span><span></span>
@@ -202,7 +202,7 @@ html,body{overflow-x:clip;}
   <a href="../events.html">Events</a>
   <a href="../library.html">Library</a>
   <a href="../blog.html">Blog</a>
-  <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:8px;">Contact</a>
+  <a class="btn btn-primary" style="margin-top:8px;" href="https://cal.com/kiyawellbeing" data-book="">Contact</a>
 </div>
 
 <!-- HERO -->
@@ -268,7 +268,7 @@ html,body{overflow-x:clip;}
     <div class="label">Come practise with Kim</div>
     <h2>Ready to find your way back to yourself?</h2>
     <p>Whether you're brand new to yoga or returning after a long break, there's a place for you here. Book a free discovery call and let's find the right session for you.</p>
-    <a href="https://calendly.com/kiyawellbeingbykimyates/reiki-session-in-person-1hour" target="_blank" rel="noopener" class="btn btn-primary">Book a free discovery call</a>
+    <a class="btn btn-primary" href="https://cal.com/kiyawellbeing/discovery-chat" data-book="discovery-chat">Book a free discovery call</a>
   </div>
 </section>
 
@@ -303,5 +303,6 @@ document.getElementById('hamburger').addEventListener('click',()=>document.getEl
 document.getElementById('menuClose').addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open'));
 document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('mobileMenu').classList.remove('open')));
 </script>
+  <script src="../booking.js" defer></script>
 </body>
 </html>
