@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Class Schedule — KIYA Wellbeing</title>
+  <meta name="description" content="Kim Yates' weekly class schedule: flow and yin yoga, breathwork and sound healing classes across Melbourne." />
+  <link rel="canonical" href="https://www.kiyawellbeing.com/classes.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="KIYA Wellbeing" />
+  <meta property="og:locale" content="en_AU" />
+  <meta property="og:title" content="My Class Schedule — KIYA Wellbeing" />
+  <meta property="og:description" content="Kim Yates' weekly class schedule: flow and yin yoga, breathwork and sound healing classes across Melbourne." />
+  <meta property="og:url" content="https://www.kiyawellbeing.com/classes.html" />
+  <meta property="og:image" content="https://www.kiyawellbeing.com/og/events.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Candlelit altar with flowers and crystal singing bowls set up for a KIYA Wellbeing event" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="My Class Schedule — KIYA Wellbeing" />
+  <meta name="twitter:description" content="Kim Yates' weekly class schedule: flow and yin yoga, breathwork and sound healing classes across Melbourne." />
+  <meta name="twitter:image" content="https://www.kiyawellbeing.com/og/events.jpg" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=fraunces@400,500,600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <style>
+    /* ─── Reset & base ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'General Sans', system-ui, sans-serif;
+      color: var(--ink-soft);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── CSS variables ─── */
+    :root {
+      --teal-bright: #C4837A;
+      --teal-deep:   #116E6B;
+      --rose:        #C4837A;
+      --ink:         #4A3F36;
+  --ink-soft:         #4A3F36;
+      --warm:        #F4F0EB;
+      --white:       #ffffff;
+      --muted:       #7A6E65;
+      --faint:       #A69E95;
+      --line:        #E8DDD0;
+      --on-dark:     #F0E8DE;
+      --on-dark-muted: #C4B5A8;
+      --on-dark-faint: #9A8E84;
+
+      --radius-card: 20px;
+      --shadow-card: 0 2px 16px rgba(44,33,24,.07);
+      --max-w: 1160px;
+      --px: clamp(20px, 5vw, 60px);
+    }
+
+    /* ─── Typography ─── */
+    h1, h2, h3, h4 {
+      font-family: 'Fraunces', Georgia, serif;
+      color: var(--teal-deep);
+      line-height: 1.2;
+      font-weight: 600;
+    }
+    p { line-height: 1.7; }
+
+    /* ─── Layout helpers ─── */
+    .container {
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding-inline: var(--px);
+    }
+    .section-label {
+      display: inline-block;
+      font-family: 'General Sans', sans-serif;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--teal-bright);
+      margin-bottom: 1rem;
+    }
+
+    /* ─── Section skins ─── */
+    .sec-warm  { background: var(--warm); }
+    .sec-light { background: var(--white); }
+    .sec-dark  { background: var(--ink); }
+
+    /* ─── Buttons ─── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      font-family: 'General Sans', sans-serif;
+      font-size: .9rem;
+      font-weight: 600;
+      border-radius: 100px;
+      padding: .7rem 1.5rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity .2s, transform .15s;
+      white-space: nowrap;
+    }
+    .btn:hover { opacity: .88; transform: translateY(-1px); }
+    .btn-primary { background:#116E6B; color: #fff; border: none; }
+    .btn-ghost {
+      background: transparent;
+      border: 1.5px solid var(--teal-deep);
+      color: var(--teal-deep);
+    }
+    .btn-ghost-dark {
+      background: transparent;
+      border: 1.5px solid var(--on-dark);
+      color: var(--on-dark);
+    }
+    .btn-outline-dark {
+      background: transparent;
+      border: 1.5px solid var(--on-dark-muted);
+      color: var(--on-dark-muted);
+    }
+    .btn-sm { padding: .55rem 1.2rem; font-size: .85rem; }
+
+    /* ─── Navigation ─── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(244,240,235,.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding: 0 var(--px);
+      height: 68px;
+      gap: 1rem;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      text-decoration: none;
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--teal-deep);
+      flex-shrink: 0;
+    }
+    .nav-logo span { color: var(--rose); }
+    .nav-lotus {
+      width: 20px;
+      height: 24px;
+      color: var(--teal-deep);
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-size: .9rem;
+      font-weight: 600;
+      color: var(--muted);
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--teal-deep); }
+    .nav-links a.active { color: var(--teal-deep); font-weight: 600; }
+    .nav-cta { margin-left: .5rem; }
+
+    /* Hamburger */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      z-index: 200;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--teal-deep);
+      border-radius: 2px;
+      transition: transform .25s, opacity .25s;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    @media (max-width: 1100px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        position: fixed;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        background: var(--warm);
+        padding: 96px 2rem 2rem;
+        transform: translateX(100%);
+        transition: transform .3s ease;
+        box-shadow: -4px 0 24px rgba(44,33,24,.12);
+        z-index: 150;
+      }
+      .nav-links.open { transform: translateX(0); }
+      .nav-links li { width: 100%; border-bottom: 1px solid var(--line); }
+      .nav-links a {
+        display: block;
+        padding: 1rem 0;
+        font-size: 1.05rem;
+      }
+      .nav-cta { margin: 1.5rem 0 0; }
+    }
+
+    /* ─── Hero ─── */
+    .hero {
+      padding: clamp(72px, 10vw, 120px) 0 clamp(60px, 8vw, 100px);
+      text-align: left;
+    }
+    .hero-inner { max-width: 780px; }
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      margin-bottom: 1.25rem;
+    }
+    .hero-lead {
+      font-size: clamp(1rem, 2vw, 1.18rem);
+      color: var(--muted);
+      max-width: 560px;
+    }
+
+    /* ─── Workshop section ─── */
+    .workshops { padding: clamp(60px, 8vw, 100px) 0; }
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: clamp(2rem, 4vw, 3rem);
+    }
+    .section-header-left h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      margin-top: .25rem;
+    }
+    .workshop-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    @media (max-width: 780px) {
+      .workshop-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Workshop card */
+    .workshop-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 2rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+    .card-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--teal-deep);
+      background: rgba(17,110,107,.08);
+      border-radius: 100px;
+      padding: .3rem .85rem;
+      width: fit-content;
+    }
+    .card-tag.tag-special {
+      color: var(--rose);
+      background: rgba(196,131,122,.1);
+    }
+    .card-title {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--teal-deep);
+      line-height: 1.25;
+    }
+    .card-venue {
+      display: flex;
+      align-items: flex-start;
+      gap: .5rem;
+      font-size: .85rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .card-venue svg { flex-shrink: 0; margin-top: 2px; }
+    .card-desc {
+      font-size: .92rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    .dates-label {
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin-bottom: .5rem;
+    }
+    .date-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .45rem;
+    }
+    .date-list li {
+      font-size: .87rem;
+      color: var(--ink-soft);
+      padding: .4rem .75rem;
+      background: rgba(17,110,107,.04);
+      border-left: 3px solid var(--teal-bright);
+      border-radius: 0 8px 8px 0;
+    }
+    .date-list li strong { color: var(--teal-deep); font-weight: 600; }
+    .facilitators-note {
+      font-size: .85rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .price-block {
+      border-top: 1px solid var(--line);
+      padding-top: 1rem;
+    }
+    .price-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem .8rem;
+      align-items: baseline;
+      margin-bottom: .35rem;
+    }
+    .price-main {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--teal-deep);
+    }
+    .price-note {
+      font-size: .82rem;
+      color: var(--muted);
+    }
+    .price-limit {
+      font-size: .8rem;
+      color: var(--rose);
+      font-weight: 600;
+    }
+    .card-cta { margin-top: auto; padding-top: .5rem; }
+
+    /* ─── Retreats section ─── */
+    .retreats { padding: clamp(60px, 8vw, 100px) 0; }
+    .retreat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 980px) {
+      .retreat-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .retreat-grid { grid-template-columns: 1fr; }
+    }
+
+    /* Retreat card */
+    .retreat-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 16px; display: block; margin-top: .4rem; }
+    .retreat-card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      padding: 1.6rem 1.4rem;
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: .85rem;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .retreat-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(44,33,24,.11);
+    }
+    .retreat-accent {
+      width: 36px;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--teal-bright);
+    }
+    .retreat-type {
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--teal-bright);
+    }
+    .retreat-title {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--teal-deep);
+      line-height: 1.2;
+    }
+    .retreat-meta {
+      display: flex;
+      flex-direction: column;
+      gap: .3rem;
+    }
+    .retreat-meta span {
+      font-size: .84rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+    }
+    .retreat-investment {
+      margin-top: auto;
+      padding-top: .75rem;
+      border-top: 1px solid var(--line);
+    }
+    .retreat-investment p {
+      font-size: .8rem;
+      color: var(--faint);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      font-weight: 600;
+      margin-bottom: .15rem;
+    }
+    .retreat-investment strong {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.05rem;
+      color: var(--teal-deep);
+    }
+
+    /* ─── CTA ─── */
+    .sec-cta {
+      padding: clamp(70px, 10vw, 110px) 0;
+      text-align: left;
+    }
+    .sec-cta .section-label { color: var(--teal-deep); }
+    .sec-cta h2 {
+      color: var(--teal-deep);
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 1rem;
+    }
+    .sec-cta p {
+      color: var(--muted);
+      font-size: clamp(.95rem, 1.8vw, 1.1rem);
+      max-width: 520px;
+      margin-bottom: 2.25rem;
+    }
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: flex-start;
+    }
+
+    /* ─── Footer ─── */
+    footer {
+      background: var(--ink);
+      border-top: 1px solid rgba(240,232,222,.1);
+      padding: 3rem 0 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+    @media (max-width: 680px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      text-decoration: none;
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--on-dark);
+      margin-bottom: .75rem;
+    }
+    .footer-logo span { color: var(--rose); }
+    .footer-logo .nav-lotus { color: var(--on-dark); }
+    .footer-tagline { font-size: .85rem; color: var(--on-dark-muted); }
+    .footer-nav-title {
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--on-dark-faint);
+      margin-bottom: .85rem;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .55rem;
+    }
+    .footer-links a {
+      text-decoration: none;
+      font-size: .88rem;
+      color: var(--on-dark-muted);
+      transition: color .2s;
+    }
+    .footer-links a:hover { color: var(--on-dark); }
+    .footer-social a {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      text-decoration: none;
+      font-size: .88rem;
+      color: var(--on-dark-muted);
+      transition: color .2s;
+    }
+    .footer-social a:hover { color: var(--teal-bright); }
+    .footer-bottom {
+      border-top: 1px solid rgba(240,232,222,.1);
+      padding-top: 1.5rem;
+      font-size: .78rem;
+      color: var(--on-dark-faint);
+      text-align: center;
+    }
+  html,body{overflow-x:clip;}
+.nav-links a{white-space:nowrap;}
+@media(min-width:1101px){.nav-links a:not(.btn){font-size:14px;}}
+/* Header: match home page */
+.nav-inner{max-width:1100px;margin:0 auto;padding:16px clamp(20px,5vw,40px);height:auto;gap:20px;}
+.nav-links .btn-primary,a.nav-cta.btn-primary{color:#fff;font-size:15px;font-weight:600;padding:11px 22px;border-radius:100px;border:0;line-height:25px;}
+@media(min-width:1101px){
+  .nav-links{gap:20px;margin-left:auto;}
+  .nav-links a:not(.btn){font-size:14px;font-weight:600;color:var(--ink-soft);}
+  .nav-links a:not(.btn):hover,.nav-links a.active{color:var(--teal-deep);}
+  .nav-cta{margin-left:0;}
+}
+@media(min-width:1101px){.nav-links a:not(.btn){font-weight:700 !important;border-bottom:0 !important;}}
+    /* FAQ */
+    .faq-section { padding: clamp(56px,8vw,96px) 0; }
+    .faq-intro { text-align: center; margin-bottom: clamp(28px,4vw,44px); }
+    .faq-wrap { max-width: 780px; margin: 0 auto; }
+    .faq-group { margin-bottom: 2rem; }
+    .faq-group-title { font-size: 1.15rem; color: var(--teal-deep); margin-bottom: .75rem; }
+    .faq-item { background: var(--white); border: 1px solid var(--line); border-radius: 14px; margin-bottom: .6rem; overflow: hidden; }
+    .faq-item summary { cursor: pointer; list-style: none; padding: 1rem 3rem 1rem 1.25rem; font-weight: 600; font-size: 1rem; color: var(--ink-soft); position: relative; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; position: absolute; right: 1.25rem; top: 50%; transform: translateY(-50%); font-size: 1.4rem; font-weight: 400; color: var(--teal-deep); transition: transform .2s; }
+    .faq-item[open] summary::after { content: '\2212'; }
+    .faq-item summary:hover { color: var(--teal-deep); }
+    .faq-answer { padding: 0 1.25rem 1.1rem; }
+    .faq-answer p { font-size: .95rem; line-height: 1.7; color: var(--muted); margin: 0; }
+    .faq-answer a { color: var(--teal-deep); text-decoration: underline; text-underline-offset: 3px; }
+
+    /* ─── Class schedule ─── */
+    .schedule { list-style: none; display: grid; gap: 16px; }
+    .class-row {
+      display: grid;
+      grid-template-columns: 84px 1fr auto;
+      gap: 24px;
+      align-items: center;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-card);
+      box-shadow: var(--shadow-card);
+      padding: 20px 24px;
+    }
+    .class-date {
+      display: flex; flex-direction: column; align-items: center;
+      background: var(--warm); border-radius: 14px; padding: 10px 0;
+      color: var(--teal-deep); line-height: 1.1;
+    }
+    .class-day, .class-month { font-size: .72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--rose); }
+    .class-num { font-family: 'Fraunces', Georgia, serif; font-size: 1.9rem; font-weight: 600; }
+    .class-tbc .class-num { font-size: 1.3rem; }
+    .class-info h3 { font-size: 1.25rem; margin-bottom: 4px; }
+    .class-meta { font-weight: 600; color: var(--ink); }
+    .class-with { font-size: .9rem; color: var(--muted); }
+    .class-book { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+    .class-price { font-family: 'Fraunces', Georgia, serif; font-size: 1.3rem; color: var(--teal-deep); font-weight: 600; }
+    @media (max-width: 640px) {
+      .class-row { grid-template-columns: 68px 1fr; gap: 16px; padding: 16px; }
+      .class-book { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+    /* ─── Weekly timetable ─── */
+    .week-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      align-items: start;
+      gap: 16px;
+    }
+    .day-card {
+      background: var(--warm);
+      border-radius: var(--radius-card);
+      padding: 22px 24px;
+    }
+    .day-card h3 {
+      font-size: 1.15rem;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .day-list { list-style: none; display: grid; gap: 14px; }
+    .day-list li { display: flex; flex-direction: column; }
+    .day-time { font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--rose); }
+    .day-class { font-family: 'Fraunces', Georgia, serif; font-size: 1.1rem; font-weight: 600; color: var(--teal-deep); }
+    .day-venue { font-size: .9rem; color: var(--muted); }
+    .day-venue a { color: inherit; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; transition: color .2s, text-decoration-color .2s; }
+    .day-venue a:hover { color: var(--teal-deep); text-decoration-color: currentColor; }
+    .day-none { color: var(--faint); font-style: italic; }
+    .day-off { background: transparent; border: 1px dashed var(--line); }
+    .day-wide { grid-column: span 2; }
+    .day-wide .day-list { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    @media (max-width: 640px) {
+      .day-wide { grid-column: auto; }
+    }
+</style>
+</head>
+<body>
+
+<!-- ─── Navigation ─── -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="header-logo.png" alt="KIYA Wellbeing" style="height:54px;max-width:60vw;object-fit:contain;object-position:left;display:block;">
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="corporate.html">Corporate</a></li>
+      <li><a href="individual.html">Individual</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="classes.html" class="active">My Class Schedule</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li class="nav-cta">
+        <a class="btn btn-primary btn-sm" href="#footer">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ─── 1. Hero ─── -->
+<section class="hero sec-warm" style="background:url(events-hero.jpg) center center/cover no-repeat;position:relative;">
+  <div style="position:absolute;inset:0;background:rgba(247,240,232,0.90);"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="hero-inner" data-aos="fade-up">
+      <span class="section-label">Classes with Kim</span>
+      <h1>My Class Schedule</h1>
+      <p class="hero-lead">Flow and yin yoga, breathwork and sound healing across Melbourne. Find a class, save the date and come as you are.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 2. Weekly timetable ─── -->
+<section class="workshops sec-light">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-header-left">
+        <span class="section-label">Weekly classes</span>
+        <h2>Every week.</h2>
+      </div>
+    </div>
+
+    <div class="week-grid">
+
+      <div class="day-card" data-aos="fade-up">
+        <h3>Monday</h3>
+        <ul class="day-list">
+          <li><span class="day-time">5:30pm</span><span class="day-class">Flow</span><span class="day-venue"><a href="https://kayahealthclubs.com.au/clubs/prahran-chapel-st/" target="_blank" rel="noopener">KAYA Prahran</a></span></li>
+          <li><span class="day-time">6:30pm</span><span class="day-class">Yin &amp; Release</span><span class="day-venue"><a href="https://kayahealthclubs.com.au/clubs/prahran-chapel-st/" target="_blank" rel="noopener">KAYA Prahran</a></span></li>
+        </ul>
+      </div>
+
+      <div class="day-card" data-aos="fade-up">
+        <h3>Tuesday</h3>
+        <ul class="day-list">
+          <li><span class="day-time">1:30pm</span><span class="day-class">Breathwork</span><span class="day-venue"><a href="https://www.thecommons.com.au/locations/the-commons-south-melbourne" target="_blank" rel="noopener">The Commons, South Melbourne</a></span></li>
+        </ul>
+      </div>
+
+      <div class="day-card" data-aos="fade-up">
+        <h3>Wednesday</h3>
+        <ul class="day-list">
+          <li><span class="day-time">7:00am</span><span class="day-class">Flow</span><span class="day-venue"><a href="https://www.formahq.com.au/elevate" target="_blank" rel="noopener">Elevate, South Melbourne</a></span></li>
+          <li><span class="day-time">6:45pm</span><span class="day-class">Yin</span><span class="day-venue"><a href="https://www.flowst8studios.com.au/" target="_blank" rel="noopener">FlowSt8, Glen Iris</a></span></li>
+        </ul>
+      </div>
+
+      <div class="day-card" data-aos="fade-up">
+        <h3>Thursday</h3>
+        <ul class="day-list">
+          <li><span class="day-time">9:15am</span><span class="day-class">Flow</span><span class="day-venue"><a href="https://www.lunarandsol.com/" target="_blank" rel="noopener">Lunar &amp; Sol, Bentleigh</a></span></li>
+          <li><span class="day-time">10:30am</span><span class="day-class">Restore Yin</span><span class="day-venue"><a href="https://www.lunarandsol.com/" target="_blank" rel="noopener">Lunar &amp; Sol, Bentleigh</a></span></li>
+          <li><span class="day-time">5:30pm</span><span class="day-class">Flow</span><span class="day-venue"><a href="https://kayahealthclubs.com.au/clubs/chadstone-shopping-centre/" target="_blank" rel="noopener">KAYA Chadstone</a></span></li>
+          <li><span class="day-time">6:30pm</span><span class="day-class">Yin</span><span class="day-venue"><a href="https://kayahealthclubs.com.au/clubs/chadstone-shopping-centre/" target="_blank" rel="noopener">KAYA Chadstone</a></span></li>
+        </ul>
+      </div>
+
+      <div class="day-card day-off" data-aos="fade-up">
+        <h3>Friday</h3>
+        <p class="day-none">No regular classes</p>
+      </div>
+
+      <div class="day-card" data-aos="fade-up">
+        <h3>Saturday</h3>
+        <ul class="day-list">
+          <li><span class="day-time">9:15am</span><span class="day-class">Flow</span><span class="day-venue"><a href="https://www.lunarandsol.com/" target="_blank" rel="noopener">Lunar &amp; Sol, Bentleigh</a></span></li>
+        </ul>
+      </div>
+
+      <div class="day-card day-wide" data-aos="fade-up">
+        <h3>Sunday</h3>
+        <ul class="day-list">
+          <li><span class="day-time">2:45pm</span><span class="day-class">Flow</span><span class="day-venue"><a href="https://kayahealthclubs.com.au/clubs/prahran-chapel-st/" target="_blank" rel="noopener">KAYA Prahran</a> · every Sunday</span></li>
+          <li><span class="day-time">3:45pm</span><span class="day-class">Yin &amp; Yoga Nidra</span><span class="day-venue"><a href="https://kayahealthclubs.com.au/clubs/prahran-chapel-st/" target="_blank" rel="noopener">KAYA Prahran</a> · every Sunday</span></li>
+          <li><span class="day-time">2nd &amp; 3rd Sundays, 6pm</span><span class="day-class">Yin &amp; Sound</span><span class="day-venue"><a href="https://eq-wellbeing.com/" target="_blank" rel="noopener">EQ Wellbeing</a></span></li>
+          <li><span class="day-time">Selected Sundays, 6:30 – 8pm</span><span class="day-class">Yin · Pin · Sound</span><span class="day-venue"><a href="https://www.flowst8studios.com.au/" target="_blank" rel="noopener">FlowSt8, Glen Iris</a></span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 3. Upcoming ─── -->
+<section class="workshops sec-warm">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-header-left">
+        <span class="section-label">Special events</span>
+        <h2>Coming up.</h2>
+      </div>
+      <a class="btn btn-ghost" href="events.html">Full event details</a>
+    </div>
+
+    <ol class="schedule">
+
+      <li class="class-row" data-aos="fade-up">
+        <div class="class-date"><span class="class-day">Sun</span><span class="class-num">8</span><span class="class-month">Nov</span></div>
+        <div class="class-info">
+          <h3>She Who Nurtures</h3>
+          <p class="class-meta">11am – 1pm · FlowSt8, Glen Iris</p>
+          <p class="class-with">With Sarah Louise · Breathwork, cacao, yin yoga, reiki &amp; sound</p>
+        </div>
+        <div class="class-book">
+          <span class="class-price">$99</span>
+          <a class="btn btn-primary btn-sm" href="https://www.eventbrite.com.au/e/she-who-nurtures-honouring-the-year-that-was-tickets-2001809834101" target="_blank" rel="noopener">Book</a>
+        </div>
+      </li>
+
+      <li class="class-row" data-aos="fade-up">
+        <div class="class-date"><span class="class-day">Sat</span><span class="class-num">5</span><span class="class-month">Dec</span></div>
+        <div class="class-info">
+          <h3>Release &amp; Receive</h3>
+          <p class="class-meta">4 – 6pm · INNDRIYA Studio, Highett</p>
+          <p class="class-with">With Claire Bradshaw · Somatic breathwork, reiki &amp; live sound bath</p>
+        </div>
+        <div class="class-book">
+          <span class="class-price">$88</span>
+          <a class="btn btn-primary btn-sm" href="https://www.eventbrite.com.au/o/72706899423" target="_blank" rel="noopener">Book</a>
+        </div>
+      </li>
+
+      <li class="class-row" data-aos="fade-up">
+        <div class="class-date"><span class="class-day">Sun</span><span class="class-num">6</span><span class="class-month">Dec</span></div>
+        <div class="class-info">
+          <h3>Yin.Pin.Sound Summer Series</h3>
+          <p class="class-meta">6:30 – 8pm · FlowSt8, Glen Iris</p>
+          <p class="class-with">With Dr. Susie · Yin yoga, acupuncture &amp; crystal sound healing</p>
+        </div>
+        <div class="class-book">
+          <span class="class-price">$66</span>
+          <a class="btn btn-primary btn-sm" href="https://www.eventbrite.com.au/o/72706899423" target="_blank" rel="noopener">Book</a>
+        </div>
+      </li>
+
+      <li class="class-row" data-aos="fade-up">
+        <div class="class-date"><span class="class-day">Sun</span><span class="class-num">13</span><span class="class-month">Dec</span></div>
+        <div class="class-info">
+          <h3>Yin &amp; Violin</h3>
+          <p class="class-meta">7 – 8:30pm · Grassroots Studio, St Kilda</p>
+          <p class="class-with">With Jessica Leigh · Candlelit yin yoga &amp; live violin</p>
+        </div>
+        <div class="class-book">
+          <span class="class-price">$88</span>
+          <a class="btn btn-primary btn-sm" href="https://events.humanitix.com/yin-and-violin" target="_blank" rel="noopener">Book</a>
+        </div>
+      </li>
+
+      <li class="class-row class-tbc" data-aos="fade-up">
+        <div class="class-date"><span class="class-day">2027</span><span class="class-num">Jan</span><span class="class-month">&amp; Feb</span></div>
+        <div class="class-info">
+          <h3>Yin.Pin.Sound Summer Series</h3>
+          <p class="class-meta">Dates TBC · FlowSt8, Glen Iris</p>
+          <p class="class-with">With Dr. Susie · Yin yoga, acupuncture &amp; crystal sound healing</p>
+        </div>
+        <div class="class-book">
+          <span class="class-price">TBC</span>
+        </div>
+      </li>
+
+    </ol>
+  </div>
+</section>
+
+
+<!-- ─── 4. CTA ─── -->
+<section class="sec-cta sec-light">
+  <div class="container">
+    <div data-aos="fade-up">
+      <span class="section-label">Come as you are</span>
+      <h2>Not sure which class is for you?</h2>
+      <p>Discovery calls are free and there's no pressure. Reach out and we'll find the right fit.</p>
+      <div class="cta-buttons">
+        <a class="btn btn-primary" href="https://cal.com/kiyawellbeing/discovery-chat" data-book="discovery-chat">Book a complimentary call</a>
+        <a class="btn" href="events.html" style="background:transparent;color:var(--teal-deep);border:2px solid var(--teal-deep);">See events &amp; retreats</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── 5. Footer ─── -->
+<footer id="footer" style="background:#116E6B;color:#fff;">
+  <div style="max-width:1100px;margin:0 auto;padding:clamp(40px,6vw,56px) clamp(20px,5vw,40px);display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;">
+    <a href="index.html"><img src="footer-logo.png" alt="KIYA Wellbeing" style="height:40px;display:block;"></a>
+    <div style="display:flex;gap:22px;justify-content:center;flex-wrap:wrap;">
+      <a href="index.html#about" style="color:rgba(255,255,255,0.75);text-decoration:none;font-size:15px;font-weight:500;">About</a>
+      <a href="corporate.html" style="color:rgba(255,255,255,0.75);text-decoration:none;font-size:15px;font-weight:500;">Corporate</a>
+      <a href="individual.html" style="color:rgba(255,255,255,0.75);text-decoration:none;font-size:15px;font-weight:500;">Individual</a>
+      <a href="events.html" style="color:rgba(255,255,255,0.75);text-decoration:none;font-size:15px;font-weight:500;">Events</a>
+      <a href="classes.html" style="color:rgba(255,255,255,0.75);text-decoration:none;font-size:15px;font-weight:500;">My Class Schedule</a>
+      <a href="library.html" style="color:rgba(255,255,255,0.75);text-decoration:none;font-size:15px;font-weight:500;">Library</a>
+      <a href="blog.html" style="color:rgba(255,255,255,0.75);text-decoration:none;font-size:15px;font-weight:500;">Blog</a>
+    </div>
+    <div style="display:flex;gap:16px;align-items:center;justify-content:flex-end;">
+      <a href="https://www.instagram.com/kiya_wellbeing/" target="_blank" rel="noopener" title="Instagram" style="color:#fff;opacity:.75;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://www.linkedin.com/in/kim-yates-bb508058/" target="_blank" rel="noopener" title="LinkedIn" style="color:#fff;opacity:.75;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8.5"/><path d="M12 16v-3a2 2 0 0 1 4 0v3"/><line x1="12" y1="11" x2="12" y2="16"/></svg></a>
+      <a href="mailto:hello@kiyawellbeing.com" title="Email" style="color:#fff;opacity:.75;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></a>
+      <a href="tel:0408851541" title="Phone" style="color:#fff;opacity:.75;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.1 6.1l1.27-.85a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.01z"/></svg></a>
+    </div>
+  </div>
+  <p style="text-align:center;color:rgba(255,255,255,0.8);font-size:14px;padding:0 0 28px;margin:0;">© 2026 KIYA Wellbeing · Kim Yates · Melbourne</p>
+</footer>
+
+
+<!-- ─── Scripts ─── -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 600, once: true, offset: 60 });
+
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    const open = toggle.classList.toggle('open');
+    links.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  links.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      toggle.classList.remove('open');
+      links.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
+
+  <script src="booking.js" defer></script>
+</body>
+</html>
