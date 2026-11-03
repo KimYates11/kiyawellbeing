@@ -410,6 +410,17 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 .ig-tile:hover .ig-icon{opacity:1;}
 @media(max-width:600px){.ig-grid{grid-template-columns:repeat(3,1fr);}}
 
+/* ============ MAILING LIST ============ */
+#mailing-list{scroll-margin-top:80px;}
+.ml-box{max-width:640px;margin:0 auto;text-align:center;}
+.ml-box p.ml-lead{color:var(--muted);font-size:17px;line-height:1.7;max-width:46ch;margin:0 auto 1.75rem;}
+.ml-form{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.ml-form input{flex:1 1 200px;min-width:0;font:inherit;font-size:16px;padding:14px 20px;border:1.5px solid var(--line);border-radius:100px;background:#fff;color:var(--ink);}
+.ml-form input:focus{outline:none;border-color:#116E6B;}
+.ml-form .btn{flex:0 0 auto;border:0;cursor:pointer;font-family:inherit;}
+.ml-note{font-size:13px;color:var(--muted);margin-top:1rem;}
+@media(max-width:600px){.ml-form .btn{flex:1 1 100%;}}
+
 /* ============ RESPONSIVE ============ */
 @media(max-width:1080px){
   .hero-grid,.about-grid{grid-template-columns:1fr;}
@@ -445,6 +456,7 @@ html,body{overflow-x:clip;}
       <a href="classes.html">Schedule</a>
       <a href="library.html">Library</a>
       <a href="blog.html">Blog</a>
+      <a href="#mailing-list">Mailing list</a>
       <a href="#footer" class="btn btn-primary btn-sm">Contact</a>
     </div>
     <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -463,6 +475,7 @@ html,body{overflow-x:clip;}
   <a href="classes.html" class="menu-link">Schedule</a>
   <a href="library.html" class="menu-link">Library</a>
   <a href="blog.html" class="menu-link">Blog</a>
+  <a href="#mailing-list" class="menu-link">Mailing list</a>
   <a href="#footer" class="btn btn-primary" style="margin-top:8px;">Contact</a>
 </div>
 
@@ -654,6 +667,23 @@ html,body{overflow-x:clip;}
   </div>
 </section>
 
+<!-- MAILING LIST -->
+<section class="sec" id="mailing-list" style="background:var(--white);">
+  <div class="container">
+    <div class="ml-box" data-aos="fade-up">
+      <div class="label">Mailing list</div>
+      <h2 style="margin-bottom:1rem;">Join the KIYA community</h2>
+      <p class="ml-lead">Be the first to hear about new events, retreats and classes, plus gentle reminders to slow down and breathe.</p>
+      <form class="ml-form" id="mlForm">
+        <input type="text" name="name" placeholder="Your name" autocomplete="name" aria-label="Your name" required>
+        <input type="email" name="email" placeholder="Your email" autocomplete="email" aria-label="Your email" required>
+        <button type="submit" class="btn btn-primary">Join the list</button>
+      </form>
+      <p class="ml-note">This opens an email to Kim so she can add you. No spam, unsubscribe any time.</p>
+    </div>
+  </div>
+</section>
+
 <!-- INSTAGRAM -->
 <section class="sec-warm" style="padding:clamp(48px,7vw,80px) 0;">
   <div class="container">
@@ -690,6 +720,7 @@ html,body{overflow-x:clip;}
       <a href="classes.html">Schedule</a>
       <a href="library.html">Library</a>
       <a href="blog.html">Blog</a>
+      <a href="#mailing-list">Mailing list</a>
     </nav>
     <div class="footer-right">
       <a href="https://www.instagram.com/kiya_wellbeing/" target="_blank" rel="noopener" title="Instagram"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg></a>
@@ -703,6 +734,13 @@ html,body{overflow-x:clip;}
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+// Mailing list: open a pre-filled email to Kim
+document.getElementById('mlForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target.elements,name=f['name'].value.trim(),email=f['email'].value.trim();
+  const body='Hi Kim,\n\nPlease add me to the KIYA Wellbeing mailing list.\n\nName: '+name+'\nEmail: '+email;
+  location.href='mailto:hello@kiyawellbeing.com?subject='+encodeURIComponent('Add me to the KIYA mailing list')+'&body='+encodeURIComponent(body);
+});
 AOS.init({once:true,offset:60,duration:650});
 
 // Hero h1 reveal on load
