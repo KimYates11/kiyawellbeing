@@ -178,6 +178,19 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 .pillar-events h3,.pillar-events .pillar-link,.pillar-events .pillar-tagline{color:var(--teal-deep);}
 .pillar-events .pillar-list li::before{background:var(--teal-deep);}
 
+/* Block-colour header on each pillar card, white text */
+.pillar-corp .pillar-header{background:#116E6B;}
+.pillar-indiv .pillar-header{background:#C4837A;}
+.pillar-events .pillar-header{background:#4C9290;}
+.pillar-card .pillar-accent-bar{display:none;}
+.pillar-card .pillar-header{padding-bottom:1.6rem;}
+.pillar-card .pillar-header h3,.pillar-card .pillar-header .pillar-tagline,.pillar-card .pillar-header .pillar-num{color:#fff;}
+.pillar-card .pillar-header .pillar-num{opacity:.8;}
+.pillar-card .pillar-header .pillar-tagline{opacity:.9;}
+.pillar-card .pillar-divider{display:none;}
+.pillar-card .pillar-body{padding-top:1.1rem;}
+@media(min-width:901px){.pillar-card{display:grid;grid-row:span 2;grid-template-rows:subgrid;row-gap:0;}}
+
 /* ============ NAV ============ */
 .nav{
   position:sticky;top:0;z-index:100;background:var(--white);
