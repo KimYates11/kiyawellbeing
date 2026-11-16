@@ -238,7 +238,8 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 .h2-reveal{overflow:hidden;}
 .h2-reveal .h2-inner{display:block;transform:translateY(100%);opacity:0;transition:transform .65s cubic-bezier(.16,1,.3,1),opacity .35s ease;}
 .h2-reveal.in .h2-inner{transform:translateY(0);opacity:1;}
-.hero-sub{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--muted);max-width:46ch;margin-top:3rem;margin-bottom:2rem;line-height:1.7;}
+.hero-sub{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--muted);max-width:none;margin-top:3rem;margin-bottom:2rem;line-height:1.7;}
+@media(min-width:1000px){.hero-sub{white-space:nowrap;font-size:clamp(1.05rem,1.6vw,1.3rem);}}
 .hero-btns{display:flex;flex-wrap:wrap;gap:12px;}
 .hero-pills{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:2rem;}
 .hero-pills-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);width:100%;margin-bottom:2px;}
@@ -502,7 +503,7 @@ html,body{overflow-x:clip;}
         <span class="reveal-line"><span><em>Breathe.</em></span></span>
         <span class="reveal-line"><span>Come home to yourself.</span></span>
       </h1>
-      <p class="hero-sub" style="max-width:40ch;margin-bottom:1.5rem;color:var(--ink-soft);font-weight:600;">Reconnect with your body. Quiet your mind. Create space for what matters.</p>
+      <p class="hero-sub" style="margin-bottom:1.5rem;color:var(--ink-soft);font-weight:600;">Reconnect with your body. Quiet your mind. Create space for what matters.</p>
       <div class="hero-body">
         <p>In a world that asks us to do more, be more and give more, KIYA Wellbeing invites you to slow down, reconnect and simply be.</p>
         <p>Through yoga, meditation, breathwork, Reiki and sound healing, we create nurturing experiences that support your nervous system, restore balance and help you feel more grounded, connected and at ease.</p>
