@@ -221,6 +221,18 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 .testi-logo{height:40px;width:110px;object-fit:contain;object-position:left center;flex-shrink:0;}
 @media(min-width:801px){.testi-footer{min-height:162px;}}
 
+/* ============ BRANDS BANNER ============ */
+.brand-strip{margin-top:clamp(40px,6vw,64px);}
+.brand-strip-label{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-deep);margin-bottom:1.25rem;}
+.brand-strip-window{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
+.brand-track{display:flex;width:max-content;animation:brand-scroll 32s linear infinite;}
+.brand-strip:hover .brand-track{animation-play-state:paused;}
+.brand-set{display:flex;align-items:center;gap:clamp(40px,6vw,72px);padding-right:clamp(40px,6vw,72px);}
+.brand-item{display:flex;align-items:center;height:48px;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:clamp(1.1rem,2vw,1.4rem);color:var(--ink-soft);white-space:nowrap;opacity:.75;}
+.brand-item img{height:44px;width:auto;max-width:150px;object-fit:contain;filter:grayscale(1);}
+@keyframes brand-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@media(prefers-reduced-motion:reduce){.brand-track{animation:none;}.brand-strip-window{overflow-x:auto;}}
+
 /* ============ CTA BOX ============ */
 .cta-box{
   background:#116E6B;border-radius:24px;
@@ -585,6 +597,17 @@ html,body{overflow-x:clip;}
 
     </div>
 
+
+    <!-- BRANDS BANNER: to add a logo, replace the brand name inside a brand-item with <img src="logos/NAME.png" alt="NAME">, in BOTH copies of the list -->
+    <div class="brand-strip" data-aos="fade-up">
+      <div class="brand-strip-label">Brands we've worked with</div>
+      <div class="brand-strip-window">
+        <div class="brand-track">
+          <div class="brand-set"><div class="brand-item">EQ Wellbeing</div><div class="brand-item">KAYA Health</div><div class="brand-item">Skinstitute</div><div class="brand-item">Lancôme</div><div class="brand-item">Synergie</div><div class="brand-item">Wellineux</div><div class="brand-item"><img src="logos/remedy.png?v=3" alt="Remedy"></div><div class="brand-item">Henne</div></div>
+          <div class="brand-set" aria-hidden="true"><div class="brand-item">EQ Wellbeing</div><div class="brand-item">KAYA Health</div><div class="brand-item">Skinstitute</div><div class="brand-item">Lancôme</div><div class="brand-item">Synergie</div><div class="brand-item">Wellineux</div><div class="brand-item"><img src="logos/remedy.png?v=3" alt=""></div><div class="brand-item">Henne</div></div>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </section>
