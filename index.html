@@ -241,12 +241,13 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 .hero-sub{font-size:clamp(1.05rem,2.2vw,1.3rem);color:var(--muted);max-width:none;margin-top:3rem;margin-bottom:2rem;line-height:1.7;}
 @media(min-width:1000px){.hero-sub{white-space:nowrap;font-size:clamp(1.05rem,1.6vw,1.3rem);}}
 .hero-btns{display:flex;flex-wrap:wrap;gap:12px;}
-.hero-pills{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:2rem;}
-.hero-pills-label{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);width:100%;margin-bottom:2px;}
-.hero-pill{font-size:13px;font-weight:600;color:var(--teal-deep);background:transparent;border:1.5px solid var(--teal-deep);border-radius:100px;padding:8px 16px;text-decoration:none;transition:background .2s,color .2s,border-color .2s;white-space:nowrap;}
+.hero-pills{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:2rem;}
+.hero-pills-label{font-size:15px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);width:100%;margin-bottom:6px;}
+.hero-pill{font-size:17px;font-weight:600;color:var(--teal-deep);background:transparent;border:1.5px solid var(--teal-deep);border-radius:100px;padding:13px 28px;text-decoration:none;transition:background .2s,color .2s,border-color .2s;white-space:nowrap;}
 .hero-pill:hover{background:#116E6B;color:#fff;border-color:#116E6B;}
 .hero-pill-dark{background:#116E6B;color:#fff;border-color:#116E6B;}
 .hero-pill-dark:hover{background:var(--teal-bright);border-color:var(--teal-bright);}
+@media(max-width:480px){.hero-pills{gap:8px;}.hero-pill{font-size:15px;padding:11px 18px;}}
 
 /* Photo card */
 .photo-card{
