@@ -279,6 +279,38 @@ h2{font-size:clamp(1.9rem,4.5vw,3rem);margin-bottom:1.5rem;}
 .ig-tile:hover .ig-icon{opacity:1;}
 @media(max-width:600px){.ig-grid{grid-template-columns:repeat(3,1fr);}}
 
+/* ============ WELLBEING CHECK ============ */
+.wc-sec{background:#F6E3D8;}
+.wc-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,6vw,72px);align-items:center;}
+.wc-sec h2{color:var(--teal-deep);}
+.wc-lead{font-size:17px;line-height:1.7;color:var(--ink-soft);max-width:52ch;margin-bottom:1.4rem;}
+.wc-points{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;margin-bottom:1.8rem;}
+.wc-points li{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.5;color:var(--ink-soft);}
+.wc-points li::before{content:"";flex:none;width:9px;height:9px;border-radius:50%;background:var(--teal-deep);margin-top:7px;}
+.wc-points b{color:var(--teal-deep);}
+.wc-form{background:#fff;border:1px solid rgba(44,33,24,.12);border-radius:20px;padding:clamp(20px,3vw,28px);box-shadow:0 10px 30px rgba(44,33,24,.08);}
+.wc-form h3{font-size:1.2rem;color:var(--ink-soft);margin-bottom:1rem;}
+.wc-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.wc-fields .full{grid-column:1/-1;}
+.wc-fields label{display:block;font-size:13px;font-weight:600;color:var(--ink-soft);margin-bottom:5px;}
+.wc-fields input{width:100%;font:inherit;font-size:16px;padding:13px 18px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);}
+.wc-fields input:focus{outline:none;border-color:var(--teal-deep);}
+.wc-form .btn{width:100%;margin-top:16px;border:0;cursor:pointer;font-family:inherit;}
+.wc-note{font-size:13px;color:var(--muted);margin-top:.8rem;line-height:1.5;}
+.wc-thanks{display:none;text-align:center;padding:12px 4px;}
+.wc-thanks h3{color:var(--teal-deep);font-size:1.35rem;margin-bottom:.5rem;}
+.wc-thanks p{font-size:15px;color:var(--ink-soft);line-height:1.6;}
+.wc-form.sent form{display:none;}
+.wc-form.sent .wc-thanks{display:block;}
+.wc-preview{position:relative;height:clamp(420px,48vw,560px);}
+.wc-preview img{position:absolute;width:62%;height:auto;border-radius:8px;box-shadow:0 18px 40px rgba(44,33,24,.22);background:#fff;}
+.wc-preview .p4{right:0;top:0;transform:rotate(7deg);}
+.wc-preview .p2{left:2%;top:6%;transform:rotate(-6deg);}
+.wc-preview .p1{left:19%;top:12%;transform:rotate(1deg);z-index:2;}
+.wc-hero-link{display:inline-block;margin-top:16px;font-size:15px;font-weight:600;color:var(--teal-deep);text-decoration:none;border-bottom:1.5px solid rgba(17,110,107,.35);}
+.wc-hero-link:hover{border-bottom-color:var(--teal-deep);}
+@media(max-width:900px){.wc-grid{grid-template-columns:1fr;}.wc-preview{order:-1;height:auto;aspect-ratio:1/1.1;max-width:480px;width:100%;margin:0 auto;}}
+@media(max-width:520px){.wc-fields{grid-template-columns:1fr;}.wc-points{grid-template-columns:1fr;}}
 /* ============ RESPONSIVE ============ */
 @media(max-width:1080px){
   .corp-hero-grid{grid-template-columns:1fr;}
@@ -361,6 +393,7 @@ html,body{overflow-x:clip;}
           <a class="btn btn-primary" href="https://cal.com/kiyawellbeing/intro-call" data-book="intro-call">Book a free consultation</a>
           <a href="#offerings" class="btn btn-ghost">See what's included</a>
         </div>
+        <a href="#wellbeing-check" class="wc-hero-link">Not sure where to start? Get our free Team Wellbeing Check &rarr;</a>
       </div>
       <div data-aos="fade-left" data-aos-duration="700" data-aos-delay="120">
         <div class="stats-panel">
@@ -472,6 +505,46 @@ html,body{overflow-x:clip;}
       </div>
     </div>
     </div><!-- /offering-grid -->
+  </div>
+</section>
+
+<!-- WELLBEING CHECK -->
+<section class="sec wc-sec" id="wellbeing-check">
+  <div class="container">
+    <div class="wc-grid">
+      <div data-aos="fade-up">
+        <div class="label">Free for HR &amp; People leaders</div>
+        <h2>How is your team <em>really</em> doing?</h2>
+        <p class="wc-lead">The 15-Minute Team Wellbeing Check helps you see where your people are thriving, where the gaps are, and what support they would actually use. Fill it in, send it back, and Kim will reply with a free one-page Wellbeing Snapshot.</p>
+        <ul class="wc-points">
+          <li><span><b>19 areas</b> from psychosocial safety to sleep and breathwork</span></li>
+          <li><span><b>About 15 minutes</b>, as a fillable PDF</span></li>
+          <li><span><b>Any team:</b> office, hybrid, production or shift workers</span></li>
+          <li><span><b>Free Snapshot:</b> your top three priorities and a first step</span></li>
+        </ul>
+        <div class="wc-form" id="wcBox">
+          <form id="wcForm">
+            <h3>Send me the Wellbeing Check</h3>
+            <div class="wc-fields">
+              <div><label for="wcName">Your name</label><input id="wcName" type="text" name="name" autocomplete="name" required></div>
+              <div><label for="wcBiz">Business name</label><input id="wcBiz" type="text" name="business" autocomplete="organization" required></div>
+              <div class="full"><label for="wcEmail">Work email</label><input id="wcEmail" type="email" name="email" autocomplete="email" required></div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send me the Check</button>
+            <p class="wc-note">This opens an email to Kim with your details, ready to send. She'll reply with the fillable checklist. No spam, ever.</p>
+          </form>
+          <div class="wc-thanks" role="status">
+            <h3>Thank you!</h3>
+            <p>Just press send in the email that opened, and Kim will reply with your Team Wellbeing Check. If no email opened, write to <a href="mailto:hello@kiyawellbeing.com">hello@kiyawellbeing.com</a>.</p>
+          </div>
+        </div>
+      </div>
+      <div class="wc-preview" data-aos="fade-left" aria-hidden="true">
+        <img class="p4" src="wellbeing-check-p4.jpg" alt="" loading="lazy" width="636" height="900">
+        <img class="p2" src="wellbeing-check-p2.jpg" alt="" loading="lazy" width="636" height="900">
+        <img class="p1" src="wellbeing-check-p1.jpg" alt="" loading="lazy" width="636" height="900">
+      </div>
+    </div>
   </div>
 </section>
 
@@ -665,6 +738,13 @@ html,body{overflow-x:clip;}
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+document.getElementById('wcForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target.elements,name=f['name'].value.trim(),biz=f['business'].value.trim(),email=f['email'].value.trim();
+  const body='Hi Kim,\n\nPlease send me the free 15-Minute Team Wellbeing Check.\n\nName: '+name+'\nBusiness: '+biz+'\nEmail: '+email;
+  location.href='mailto:hello@kiyawellbeing.com?subject='+encodeURIComponent('Team Wellbeing Check request: '+biz)+'&body='+encodeURIComponent(body);
+  document.getElementById('wcBox').classList.add('sent');
+});
 AOS.init({once:true,offset:60,duration:650});
 
 // Count-up animation
